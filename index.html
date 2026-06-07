@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JF Mercado Macro | Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i data-lucide="trending-up" class="logo-icon"></i>
+                <div class="logo-text">
+                    <h1>JF MERCADO MACRO</h1>
+                    <span>Trading Analytics</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-tab="consolidated">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Todas Juntas</span>
+                </button>
+                <button class="nav-btn" data-tab="ABERTURA INDICE">
+                    <i data-lucide="bar-chart-2"></i>
+                    <span>Abertura Índice</span>
+                </button>
+                <button class="nav-btn" data-tab="ABERTURA DOLAR">
+                    <i data-lucide="dollar-sign"></i>
+                    <span>Abertura Dólar</span>
+                </button>
+                <button class="nav-btn" data-tab="DOLAR RED">
+                    <i data-lucide="shield-alert"></i>
+                    <span>Dólar Red</span>
+                </button>
+                <button class="nav-btn" data-tab="DI ABERTURA">
+                    <i data-lucide="activity"></i>
+                    <span>DI Abertura</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="dot online"></span>
+                    <span>Dados Carregados</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-title">
+                    <h2 id="current-tab-title">Consolidado das Estratégias</h2>
+                    <p id="current-tab-desc">Visão agregada e curva de capital de todo o portfólio.</p>
+                </div>
+                <div class="header-actions">
+                    <div class="filter-group">
+                        <label for="month-filter"><i data-lucide="calendar"></i> Mês</label>
+                        <select id="month-filter">
+                            <option value="all">Todos os Meses</option>
+                            <option value="2026-03">Março 2026</option>
+                            <option value="2026-04">Abril 2026</option>
+                            <option value="2026-05">Maio 2026</option>
+                            <option value="2026-06">Junho 2026</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Cards de Métricas -->
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Resultado Total</h3>
+                        <span class="metric-value positive" id="metric-pnl">R$ 0,00</span>
+                    </div>
+                    <div class="metric-icon positive-bg">
+                        <i data-lucide="wallet"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Drawdown Máx.</h3>
+                        <span class="metric-value negative" id="metric-dd">R$ 0,00</span>
+                    </div>
+                    <div class="metric-icon negative-bg">
+                        <i data-lucide="percent"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Taxa de Acerto</h3>
+                        <span class="metric-value" id="metric-wr">0.0%</span>
+                    </div>
+                    <div class="metric-icon warning-bg">
+                        <i data-lucide="target"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Total de Operações</h3>
+                        <span class="metric-value" id="metric-trades">0</span>
+                    </div>
+                    <div class="metric-icon info-bg">
+                        <i data-lucide="sliders"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráficos -->
+            <section class="charts-area">
+                <div class="chart-card large">
+                    <div class="chart-header">
+                        <h3>Curva de Capital Acumulada (Equity Curve)</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="legend-dot portfolio"></span>Portfólio</span>
+                        </div>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="equity-chart"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Perfil de Rebaixamento (Drawdown)</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="drawdown-chart"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tabela de Trades -->
+            <section class="table-card">
+                <div class="table-header">
+                    <h3>Histórico de Operações</h3>
+                    <div class="table-actions">
+                        <div class="search-box">
+                            <i data-lucide="search"></i>
+                            <input type="text" id="table-search" placeholder="Buscar operações...">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="trades-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Estratégia</th>
+                                <th>Direção</th>
+                                <th>Stop</th>
+                                <th>Parcial 1 / 0x0</th>
+                                <th>Parcial 2</th>
+                                <th>Alvo Final</th>
+                                <th>Resultado (Pts/R$)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trades-table-body">
+                            <!-- Inserido dinamicamente via JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <span id="table-showing-text">Mostrando 0 de 0 operações</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Custom Logic -->
+    <script src="app.js"></script>
+    <script>
+        // Inicializar ícones do Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>

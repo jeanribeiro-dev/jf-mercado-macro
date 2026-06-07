@@ -1,0 +1,2215 @@
+[
+  {
+    "date": "2026-03-04",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-04",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-04",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-04",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-31",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-31",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-31",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-31",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-01",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-01",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-01",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-01",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-02",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-02",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-02",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-02",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-06",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-06",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-06",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-06",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-07",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-07",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-07",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-07",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-08",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-08",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-08",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-08",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-09",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-04-09",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-09",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-10",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-10",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-10",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-10",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-13",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-13",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-13",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-13",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-14",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-14",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-14",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-14",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-15",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-04-15",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-15",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-16",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-04-16",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-16",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-17",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-17",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-17",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-17",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-20",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-20",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-20",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-20",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-22",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-22",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-22",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-22",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-23",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-23",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-23",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-23",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-24",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-04-24",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-24",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-27",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-27",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-27",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-27",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-28",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-28",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-28",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-28",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-29",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-29",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-29",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-29",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-30",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-04-30",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-30",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-04",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-04",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-04",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-04",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-05",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "O"
+  },
+  {
+    "date": "2026-05-05",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-05",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-05",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-06",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-06",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-06",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-06",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-07",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": null,
+    "zero_zero": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-07",
+    "strategy": "ABERTURA INDICE",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-07",
+    "strategy": "DI ABERTURA",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": null,
+    "zero_zero": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-07",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-08",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-08",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-08",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-08",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-11",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-11",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-11",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-11",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-12",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-12",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-12",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-12",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-13",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-13",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-13",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-13",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-14",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": null,
+    "zero_zero": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-14",
+    "strategy": "ABERTURA INDICE",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-14",
+    "strategy": "DI ABERTURA",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": null,
+    "zero_zero": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-14",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-15",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-15",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-15",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-15",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-18",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-18",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-18",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-18",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-19",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-19",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-19",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-19",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-20",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-20",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-20",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-20",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-21",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-21",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-21",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-21",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-22",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-22",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-22",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-22",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-25",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-25",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-25",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-25",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-26",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-26",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-26",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-27",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-27",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-27",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-27",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-28",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-28",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-28",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-28",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-29",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-29",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-29",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-29",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-01",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 0.0,
+    "stop": "INABILITOU",
+    "zero_zero": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-06-01",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-01",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-06-01",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-02",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-02",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-02",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-06-02",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-03",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-03",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-03",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 1494.96,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-06-03",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-05",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-05",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-05",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -1036.76,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": null
+  },
+  {
+    "date": "2026-06-05",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "alvo": null
+  }
+]
