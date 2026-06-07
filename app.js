@@ -397,3 +397,144 @@ function formatDateBR(dateStr) {
     }
     return dateStr;
 }
+
+// Lógica de Modal e Inserção de Dados
+const tradeModal = document.getElementById('trade-modal');
+const openModalBtn = document.getElementById('open-modal-btn');
+const closeModalBtn = document.getElementById('close-modal-btn');
+const cancelFormBtn = document.getElementById('cancel-form-btn');
+const tradeForm = document.getElementById('trade-form');
+const tradeStrategySelect = document.getElementById('trade-strategy');
+const syncBtn = document.getElementById('sync-btn');
+
+// Elementos de formulário dinâmicos
+const groupP1 = document.getElementById('group-p1');
+const labelP1 = document.getElementById('label-p1');
+const groupP2 = document.getElementById('group-p2');
+const groupAlvo = document.getElementById('group-alvo');
+
+// Eventos de Abertura/Fechamento do Modal
+openModalBtn.addEventListener('click', () => {
+    // Definir data padrão como hoje no input de data
+    document.getElementById('trade-date').value = new Date().toISOString().split('T')[0];
+    tradeModal.classList.add('active');
+    updateFormFields(); // atualiza visibilidade dos campos com base na estratégia padrão
+});
+
+const closeModal = () => {
+    tradeModal.classList.remove('active');
+    tradeForm.reset();
+};
+
+closeModalBtn.addEventListener('click', closeModal);
+cancelFormBtn.addEventListener('click', closeModal);
+
+// Fecha se clicar fora do container
+tradeModal.addEventListener('click', (e) => {
+    if (e.target === tradeModal) {
+        closeModal();
+    }
+});
+
+// Atualiza visibilidade dos campos com base na estratégia selecionada
+tradeStrategySelect.addEventListener('change', updateFormFields);
+
+function updateFormFields() {
+    const strat = tradeStrategySelect.value;
+    
+    if (strat === 'ABERTURA INDICE') {
+        groupP1.style.display = 'flex';
+        labelP1.innerText = 'Parcial 1';
+        groupP2.style.display = 'flex';
+        groupAlvo.style.display = 'flex';
+    } else if (strat === 'ABERTURA DOLAR' || strat === 'DI ABERTURA') {
+        groupP1.style.display = 'flex';
+        labelP1.innerText = 'Parcial 1 / 0x0';
+        groupP2.style.display = 'none';
+        groupAlvo.style.display = 'flex';
+    } else if (strat === 'DOLAR RED') {
+        groupP1.style.display = 'none';
+        groupP2.style.display = 'none';
+        groupAlvo.style.display = 'flex';
+    }
+}
+
+// Envio do Formulário para adicionar o trade
+tradeForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const dateVal = document.getElementById('trade-date').value;
+    const strategyVal = tradeStrategySelect.value;
+    const directionVal = document.getElementById('trade-direction').value;
+    const stopVal = document.getElementById('trade-stop').value;
+    const pnlVal = parseFloat(document.getElementById('trade-pnl').value);
+
+    // Preparar objeto de status
+    const status = {};
+    if (strategyVal === 'ABERTURA INDICE') {
+        status.stop = stopVal;
+        status.p1 = document.getElementById('trade-p1').value;
+        status.p2 = document.getElementById('trade-p2').value;
+        status.alvo = document.getElementById('trade-alvo').value;
+    } else if (strategyVal === 'ABERTURA DOLAR' || strategyVal === 'DI ABERTURA') {
+        status.stop = stopVal;
+        status.zero_zero = document.getElementById('trade-p1').value;
+        status.alvo = document.getElementById('trade-alvo').value;
+    } else if (strategyVal === 'DOLAR RED') {
+        status.stop = stopVal;
+        status.alvo = document.getElementById('trade-alvo').value;
+    }
+
+    const payload = {
+        date: dateVal,
+        strategy: strategyVal,
+        direction: directionVal,
+        pnl: pnlVal,
+        ...status
+    };
+
+    try {
+        const response = await fetch('/api/add-trade', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        
+        const result = await response.json();
+        if (result.status === 'success') {
+            alert(result.message);
+            closeModal();
+            
+            // Recarregar os dados do painel recém-salvos
+            const getResponse = await fetch('trades_cleaned.json');
+            rawTrades = await getResponse.json();
+            updateDashboard();
+        } else {
+            alert("Erro ao salvar: " + result.message);
+        }
+    } catch (err) {
+        console.error("Erro na requisição:", err);
+        alert("Erro de conexão com o servidor local.");
+    }
+});
+
+// Sincronização automática com Netlify/GitHub
+syncBtn.addEventListener('click', async () => {
+    const icon = syncBtn.querySelector('i');
+    icon.classList.add('rotating');
+    syncBtn.disabled = true;
+    
+    try {
+        const response = await fetch('/api/sync', { method: 'POST' });
+        const result = await response.json();
+        
+        alert(result.message);
+    } catch (err) {
+        console.error("Erro ao sincronizar:", err);
+        alert("Erro ao conectar com o servidor para sincronização.");
+    } finally {
+        icon.classList.remove('rotating');
+        syncBtn.disabled = false;
+    }
+});
+

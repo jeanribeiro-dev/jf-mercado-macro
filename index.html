@@ -67,6 +67,14 @@
                     <p id="current-tab-desc">Visão agregada e curva de capital de todo o portfólio.</p>
                 </div>
                 <div class="header-actions">
+                    <button class="action-btn primary-btn" id="open-modal-btn">
+                        <i data-lucide="plus-circle"></i>
+                        <span>Registrar Operação</span>
+                    </button>
+                    <button class="action-btn secondary-btn" id="sync-btn">
+                        <i data-lucide="refresh-cw"></i>
+                        <span>Sincronizar Netlify</span>
+                    </button>
                     <div class="filter-group">
                         <label for="month-filter"><i data-lucide="calendar"></i> Mês</label>
                         <select id="month-filter">
@@ -182,6 +190,85 @@
                 </div>
             </section>
         </main>
+    </div>
+    
+    <!-- Modal de Inserção de Trade -->
+    <div class="modal-overlay" id="trade-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3><i data-lucide="plus-circle"></i> Registrar Nova Operação</h3>
+                <button class="close-btn" id="close-modal-btn">&times;</button>
+            </div>
+            <form id="trade-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="trade-date">Data</label>
+                        <input type="date" id="trade-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-strategy">Estratégia</label>
+                        <select id="trade-strategy" required>
+                            <option value="ABERTURA INDICE">Abertura Índice</option>
+                            <option value="ABERTURA DOLAR">Abertura Dólar</option>
+                            <option value="DOLAR RED">Dólar Red</option>
+                            <option value="DI ABERTURA">DI Abertura</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-direction">Direção</label>
+                        <select id="trade-direction" required>
+                            <option value="COMPRA">Compra</option>
+                            <option value="VENDA">Venda</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-stop">Stop</label>
+                        <select id="trade-stop" required>
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                            <option value="INABILITADO">INABILITADO</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-p1">
+                        <label for="trade-p1" id="label-p1">Parcial 1 / 0x0</label>
+                        <select id="trade-p1">
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-p2">
+                        <label for="trade-p2">Parcial 2</label>
+                        <select id="trade-p2">
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-alvo">
+                        <label for="trade-alvo">Alvo Final</label>
+                        <select id="trade-alvo">
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-pnl">Resultado Financeiro / Pontos</label>
+                        <input type="number" step="0.01" id="trade-pnl" placeholder="Ex: 910 ou -2520" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn" id="cancel-form-btn">Cancelar</button>
+                    <button type="submit" class="save-btn">Salvar Operação</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- Custom Logic -->
