@@ -24,6 +24,21 @@ const tabDescEl = document.getElementById('current-tab-desc');
 let equityChart = null;
 let drawdownChart = null;
 
+// Lógica de Modal e Inserção de Dados
+const tradeModal = document.getElementById('trade-modal');
+const openModalBtn = document.getElementById('open-modal-btn');
+const closeModalBtn = document.getElementById('close-modal-btn');
+const cancelFormBtn = document.getElementById('cancel-form-btn');
+const tradeForm = document.getElementById('trade-form');
+const tradeStrategySelect = document.getElementById('trade-strategy');
+const syncBtn = document.getElementById('sync-btn');
+
+// Elementos de formulário dinâmicos
+const groupP1 = document.getElementById('group-p1');
+const labelP1 = document.getElementById('label-p1');
+const groupP2 = document.getElementById('group-p2');
+const groupAlvo = document.getElementById('group-alvo');
+
 // Inicialização
 document.addEventListener('DOMContentLoaded', async () => {
     try {
@@ -33,6 +48,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Configurar Eventos
         setupTabEvents();
         setupFilterEvents();
+        
+        // Verificar se está rodando via Servidor Local
+        if (window.location.protocol === 'file:') {
+            const statusDot = document.querySelector('.dot');
+            statusDot.className = 'dot'; // remove classe online
+            statusDot.style.backgroundColor = 'var(--color-negative)';
+            statusDot.style.boxShadow = '0 0 8px var(--color-negative)';
+            document.getElementById('status-text').innerText = 'Modo Offline (Sem Servidor)';
+            
+            // Avisar e desabilitar botões que dependem da API do server
+            syncBtn.style.opacity = '0.5';
+            syncBtn.title = 'Inicie o painel pelo atalho na Área de Trabalho para poder sincronizar.';
+            document.getElementById('open-modal-btn').style.opacity = '0.5';
+            document.getElementById('open-modal-btn').title = 'Inicie o painel pelo atalho na Área de Trabalho para poder adicionar trades.';
+        }
         
         // Renderizar inicial
         updateDashboard();
@@ -164,12 +194,7 @@ function updateDashboard() {
 }
 
 function formatCurrency(val) {
-    // Format to Brazilian Real
-    const isIndiceOnly = selectedStrategies.length === 1 && selectedStrategies[0] === 'ABERTURA INDICE';
-    if (isIndiceOnly) {
-        // Se estiver apenas vendo Índice, exibe em pontos
-        return `${val.toLocaleString('pt-BR')} pts`;
-    }
+    // Format all to Brazilian Real
     return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
@@ -460,21 +485,6 @@ function formatDateBR(dateStr) {
     }
     return dateStr;
 }
-
-// Lógica de Modal e Inserção de Dados
-const tradeModal = document.getElementById('trade-modal');
-const openModalBtn = document.getElementById('open-modal-btn');
-const closeModalBtn = document.getElementById('close-modal-btn');
-const cancelFormBtn = document.getElementById('cancel-form-btn');
-const tradeForm = document.getElementById('trade-form');
-const tradeStrategySelect = document.getElementById('trade-strategy');
-const syncBtn = document.getElementById('sync-btn');
-
-// Elementos de formulário dinâmicos
-const groupP1 = document.getElementById('group-p1');
-const labelP1 = document.getElementById('label-p1');
-const groupP2 = document.getElementById('group-p2');
-const groupAlvo = document.getElementById('group-alvo');
 
 // Eventos de Abertura/Fechamento do Modal
 openModalBtn.addEventListener('click', () => {

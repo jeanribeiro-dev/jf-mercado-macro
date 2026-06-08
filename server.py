@@ -52,9 +52,14 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
 
         elif self.path == '/api/sync':
             try:
-                # Execute Git sequence
-                subprocess.run(["git", "add", "."], cwd=DIRECTORY, check=True, shell=True)
-                subprocess.run(["git", "commit", "-m", "Update trades via local dashboard"], cwd=DIRECTORY, check=True, shell=True)
+                # Check if there are changes to commit
+                status_res = subprocess.run(["git", "status", "--porcelain"], cwd=DIRECTORY, capture_output=True, text=True, shell=True)
+                if status_res.stdout.strip():
+                    # Execute Git commit only if changes exist
+                    subprocess.run(["git", "add", "."], cwd=DIRECTORY, check=True, shell=True)
+                    subprocess.run(["git", "commit", "-m", "Update trades via local dashboard"], cwd=DIRECTORY, check=True, shell=True)
+                
+                # Push always to ensure remote is up to date
                 subprocess.run(["git", "push"], cwd=DIRECTORY, check=True, shell=True)
                 
                 response_data = {"status": "success", "message": "Dashboard sincronizado com o Netlify com sucesso!"}
