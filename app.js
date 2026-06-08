@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function setupTabEvents() {
     const btnAll = document.getElementById('btn-all');
-    const checkboxes = document.querySelectorAll('.strat-checkbox');
+    const stratBtns = document.querySelectorAll('.strat-btn');
 
     // Botão "Todas Juntas"
     btnAll.addEventListener('click', () => {
         btnAll.classList.add('active');
-        checkboxes.forEach(cb => cb.checked = true);
+        stratBtns.forEach(btn => btn.classList.add('active'));
         
         selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
         tabTitleEl.innerText = "Consolidado das Estratégias";
@@ -57,20 +57,25 @@ function setupTabEvents() {
         updateDashboard();
     });
 
-    // Checkboxes das Estratégias individuais
-    checkboxes.forEach(cb => {
-        cb.addEventListener('change', () => {
-            const checkedBoxes = document.querySelectorAll('.strat-checkbox:checked');
+    // Botões das Estratégias individuais (Toggles)
+    stratBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const activeBtns = document.querySelectorAll('.strat-btn.active');
             
             // Garantir que pelo menos uma estratégia esteja selecionada
-            if (checkedBoxes.length === 0) {
-                cb.checked = true; // Impede desmarcar a última
+            if (btn.classList.contains('active') && activeBtns.length === 1) {
+                // Impede desmarcar o último botão ativo
                 return;
             }
             
-            selectedStrategies = Array.from(checkedBoxes).map(box => box.value);
+            // Alterna o estado ativo
+            btn.classList.toggle('active');
             
-            if (checkedBoxes.length === 4) {
+            // Recalcula estratégias ativas
+            const currentActiveBtns = document.querySelectorAll('.strat-btn.active');
+            selectedStrategies = Array.from(currentActiveBtns).map(b => b.getAttribute('data-strategy'));
+            
+            if (currentActiveBtns.length === 4) {
                 btnAll.classList.add('active');
                 tabTitleEl.innerText = "Consolidado das Estratégias";
                 tabDescEl.innerText = "Visão agregada e curva de capital de todo o portfólio.";

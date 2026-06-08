@@ -28,32 +28,26 @@
             </div>
             
             <nav class="nav-menu">
-                <button class="nav-btn active" id="btn-all">
+                <button class="nav-btn active" id="btn-all" data-tab="consolidated">
                     <i data-lucide="layout-dashboard"></i>
                     <span>Todas Juntas</span>
                 </button>
-                <div class="strategy-selectors">
-                    <label class="strat-checkbox-label">
-                        <input type="checkbox" class="strat-checkbox" value="ABERTURA INDICE" checked>
-                        <span class="custom-checkbox"></span>
-                        <span>Abertura Índice</span>
-                    </label>
-                    <label class="strat-checkbox-label">
-                        <input type="checkbox" class="strat-checkbox" value="ABERTURA DOLAR" checked>
-                        <span class="custom-checkbox"></span>
-                        <span>Abertura Dólar</span>
-                    </label>
-                    <label class="strat-checkbox-label">
-                        <input type="checkbox" class="strat-checkbox" value="DOLAR RED" checked>
-                        <span class="custom-checkbox"></span>
-                        <span>Dólar Red</span>
-                    </label>
-                    <label class="strat-checkbox-label">
-                        <input type="checkbox" class="strat-checkbox" value="DI ABERTURA" checked>
-                        <span class="custom-checkbox"></span>
-                        <span>DI Abertura</span>
-                    </label>
-                </div>
+                <button class="nav-btn active strat-btn" data-strategy="ABERTURA INDICE">
+                    <i data-lucide="bar-chart-2"></i>
+                    <span>Abertura Índice</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="ABERTURA DOLAR">
+                    <i data-lucide="dollar-sign"></i>
+                    <span>Abertura Dólar</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="DOLAR RED">
+                    <i data-lucide="shield-alert"></i>
+                    <span>Dólar Red</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="DI ABERTURA">
+                    <i data-lucide="activity"></i>
+                    <span>DI Abertura</span>
+                </button>
             </nav>
 
             <div class="sidebar-footer">
