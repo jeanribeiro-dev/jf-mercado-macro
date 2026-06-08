@@ -2211,5 +2211,15 @@
     "pnl": 0.0,
     "stop": "INABILITADO",
     "alvo": null
+  },
+  {
+    "date": "2026-06-08",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 2520,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
   }
 ]
