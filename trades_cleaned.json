@@ -22,7 +22,7 @@
     "date": "2026-03-04",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -58,7 +58,7 @@
     "date": "2026-03-05",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -94,7 +94,7 @@
     "date": "2026-03-06",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -130,7 +130,7 @@
     "date": "2026-03-09",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -166,7 +166,7 @@
     "date": "2026-03-10",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -202,7 +202,7 @@
     "date": "2026-03-11",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -238,7 +238,7 @@
     "date": "2026-03-12",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -274,7 +274,7 @@
     "date": "2026-03-13",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -310,7 +310,7 @@
     "date": "2026-03-16",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -346,7 +346,7 @@
     "date": "2026-03-18",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -382,7 +382,7 @@
     "date": "2026-03-19",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -418,7 +418,7 @@
     "date": "2026-03-20",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -454,7 +454,7 @@
     "date": "2026-03-23",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -490,7 +490,7 @@
     "date": "2026-03-24",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -526,7 +526,7 @@
     "date": "2026-03-25",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -562,7 +562,7 @@
     "date": "2026-03-26",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -598,7 +598,7 @@
     "date": "2026-03-27",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -634,7 +634,7 @@
     "date": "2026-03-30",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -670,7 +670,7 @@
     "date": "2026-03-31",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -706,7 +706,7 @@
     "date": "2026-04-01",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -742,7 +742,7 @@
     "date": "2026-04-02",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -778,7 +778,7 @@
     "date": "2026-04-06",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -814,7 +814,7 @@
     "date": "2026-04-07",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -850,7 +850,7 @@
     "date": "2026-04-08",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -877,7 +877,7 @@
     "date": "2026-04-09",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -913,7 +913,7 @@
     "date": "2026-04-10",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -949,7 +949,7 @@
     "date": "2026-04-13",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -985,7 +985,7 @@
     "date": "2026-04-14",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -1012,7 +1012,7 @@
     "date": "2026-04-15",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1039,7 +1039,7 @@
     "date": "2026-04-16",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1075,7 +1075,7 @@
     "date": "2026-04-17",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1111,7 +1111,7 @@
     "date": "2026-04-20",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1147,7 +1147,7 @@
     "date": "2026-04-22",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1183,7 +1183,7 @@
     "date": "2026-04-23",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -1210,7 +1210,7 @@
     "date": "2026-04-24",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1246,7 +1246,7 @@
     "date": "2026-04-27",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1282,7 +1282,7 @@
     "date": "2026-04-28",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -1318,7 +1318,7 @@
     "date": "2026-04-29",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": null,
     "alvo": "NÃO"
@@ -1345,7 +1345,7 @@
     "date": "2026-04-30",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": null,
     "alvo": "OK"
@@ -1381,7 +1381,7 @@
     "date": "2026-05-04",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -1417,7 +1417,7 @@
     "date": "2026-05-05",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -1453,7 +1453,7 @@
     "date": "2026-05-06",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -1525,7 +1525,7 @@
     "date": "2026-05-08",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1561,7 +1561,7 @@
     "date": "2026-05-11",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -1597,7 +1597,7 @@
     "date": "2026-05-12",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1633,7 +1633,7 @@
     "date": "2026-05-13",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -1705,7 +1705,7 @@
     "date": "2026-05-15",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1741,7 +1741,7 @@
     "date": "2026-05-18",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1777,7 +1777,7 @@
     "date": "2026-05-19",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1813,7 +1813,7 @@
     "date": "2026-05-20",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1849,7 +1849,7 @@
     "date": "2026-05-21",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1885,7 +1885,7 @@
     "date": "2026-05-22",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -1921,7 +1921,7 @@
     "date": "2026-05-25",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1947,7 +1947,7 @@
     "date": "2026-05-26",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -1983,7 +1983,7 @@
     "date": "2026-05-27",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -2019,7 +2019,7 @@
     "date": "2026-05-28",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -2055,7 +2055,7 @@
     "date": "2026-05-29",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -2091,7 +2091,7 @@
     "date": "2026-06-01",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
@@ -2127,7 +2127,7 @@
     "date": "2026-06-02",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -2163,7 +2163,7 @@
     "date": "2026-06-03",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": 1494.96,
+    "pnl": 3203.48,
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": null
@@ -2199,7 +2199,7 @@
     "date": "2026-06-05",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
-    "pnl": -1036.76,
+    "pnl": -2220.0,
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": null
