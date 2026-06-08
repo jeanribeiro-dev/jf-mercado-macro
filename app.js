@@ -42,7 +42,7 @@ const groupAlvo = document.getElementById('group-alvo');
 // Inicialização
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('trades_cleaned.json');
+        const response = await fetch(`trades_cleaned.json?t=${Date.now()}`);
         rawTrades = await response.json();
         
         // Configurar Eventos
@@ -50,18 +50,31 @@ document.addEventListener('DOMContentLoaded', async () => {
         setupFilterEvents();
         
         // Verificar se está rodando via Servidor Local
-        if (window.location.protocol === 'file:') {
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        if (!isLocal) {
             const statusDot = document.querySelector('.dot');
-            statusDot.className = 'dot'; // remove classe online
-            statusDot.style.backgroundColor = 'var(--color-negative)';
-            statusDot.style.boxShadow = '0 0 8px var(--color-negative)';
-            document.getElementById('status-text').innerText = 'Modo Offline (Sem Servidor)';
+            statusDot.className = 'dot';
+            if (window.location.protocol === 'file:') {
+                statusDot.style.backgroundColor = 'var(--color-negative)';
+                statusDot.style.boxShadow = '0 0 8px var(--color-negative)';
+                document.getElementById('status-text').innerText = 'Modo Offline (Sem Servidor)';
+                
+                syncBtn.title = 'Inicie o painel pelo atalho na Área de Trabalho para poder sincronizar.';
+                openModalBtn.title = 'Inicie o painel pelo atalho na Área de Trabalho para poder adicionar trades.';
+            } else {
+                statusDot.style.backgroundColor = 'var(--color-info)';
+                statusDot.style.boxShadow = '0 0 8px var(--color-info)';
+                document.getElementById('status-text').innerText = 'Nuvem (Apenas Leitura)';
+                
+                syncBtn.title = 'Sincronização disponível apenas no painel local.';
+                openModalBtn.title = 'Registro disponível apenas no painel local.';
+            }
             
-            // Avisar e desabilitar botões que dependem da API do server
+            // Desabilitar botões
             syncBtn.style.opacity = '0.5';
-            syncBtn.title = 'Inicie o painel pelo atalho na Área de Trabalho para poder sincronizar.';
-            document.getElementById('open-modal-btn').style.opacity = '0.5';
-            document.getElementById('open-modal-btn').title = 'Inicie o painel pelo atalho na Área de Trabalho para poder adicionar trades.';
+            syncBtn.disabled = true;
+            openModalBtn.style.opacity = '0.5';
+            openModalBtn.disabled = true;
         }
         
         // Renderizar inicial
@@ -579,7 +592,7 @@ tradeForm.addEventListener('submit', async (e) => {
             closeModal();
             
             // Recarregar os dados do painel recém-salvos
-            const getResponse = await fetch('trades_cleaned.json');
+            const getResponse = await fetch(`trades_cleaned.json?t=${Date.now()}`);
             rawTrades = await getResponse.json();
             updateDashboard();
         } else {

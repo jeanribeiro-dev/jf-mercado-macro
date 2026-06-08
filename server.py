@@ -52,18 +52,23 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
 
         elif self.path == '/api/sync':
             try:
+                env = os.environ.copy()
+                env["GIT_TERMINAL_PROMPT"] = "0"
+                env["GCM_INTERACTIVE"] = "never"
+                
                 # Check if there are changes to commit
-                status_res = subprocess.run(["git", "status", "--porcelain"], cwd=DIRECTORY, capture_output=True, text=True, shell=True)
+                status_res = subprocess.run(["git", "status", "--porcelain"], cwd=DIRECTORY, capture_output=True, text=True, shell=True, env=env)
                 if status_res.stdout.strip():
                     # Execute Git commit only if changes exist
-                    subprocess.run(["git", "add", "."], cwd=DIRECTORY, check=True, shell=True)
-                    subprocess.run(["git", "commit", "-m", "Update trades via local dashboard"], cwd=DIRECTORY, check=True, shell=True)
+                    subprocess.run(["git", "add", "."], cwd=DIRECTORY, check=True, shell=True, env=env)
+                    subprocess.run(["git", "commit", "-m", "Update trades via local dashboard"], cwd=DIRECTORY, check=True, shell=True, env=env)
                 
                 # Push always to ensure remote is up to date
-                subprocess.run(["git", "push"], cwd=DIRECTORY, check=True, shell=True)
+                subprocess.run(["git", "push"], cwd=DIRECTORY, check=True, shell=True, env=env)
                 
                 response_data = {"status": "success", "message": "Dashboard sincronizado com o Netlify com sucesso!"}
             except Exception as e:
+                print(f"Erro na sincronização: {str(e)}")
                 response_data = {"status": "error", "message": f"Erro na sincronização: {str(e)}"}
                 
             self.wfile.write(json.dumps(response_data).encode('utf-8'))
@@ -80,9 +85,9 @@ if __name__ == '__main__':
     print(f"Servidor JF Mercado Macro rodando localmente em http://localhost:{PORT}")
     print("Para encerrar o servidor, feche esta janela.")
     
-    # Allow address reuse
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
+    # Allow address reuse and use multithreaded server to prevent hanging
+    socketserver.ThreadingTCPServer.allow_reuse_address = True
+    with socketserver.ThreadingTCPServer(("", PORT), CustomHandler) as httpd:
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
