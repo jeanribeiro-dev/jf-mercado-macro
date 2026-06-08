@@ -606,8 +606,8 @@ tradeForm.addEventListener('submit', async (e) => {
 
 // Sincronização automática com Netlify/GitHub
 syncBtn.addEventListener('click', async () => {
-    const icon = syncBtn.querySelector('i');
-    icon.classList.add('rotating');
+    const icon = syncBtn.querySelector('svg') || syncBtn.querySelector('i');
+    if (icon) icon.classList.add('rotating');
     syncBtn.disabled = true;
     
     try {
@@ -619,7 +619,7 @@ syncBtn.addEventListener('click', async () => {
         console.error("Erro ao sincronizar:", err);
         alert("Erro ao conectar com o servidor para sincronização.");
     } finally {
-        icon.classList.remove('rotating');
+        if (icon) icon.classList.remove('rotating');
         syncBtn.disabled = false;
     }
 });

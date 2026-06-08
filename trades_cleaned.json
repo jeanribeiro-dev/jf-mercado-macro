@@ -2214,6 +2214,15 @@
   },
   {
     "date": "2026-06-08",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 105,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-08",
     "strategy": "ABERTURA INDICE",
     "direction": "VENDA",
     "pnl": 2520,
