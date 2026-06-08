@@ -50,6 +50,36 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 
             self.wfile.write(json.dumps(response_data).encode('utf-8'))
 
+        elif self.path == '/api/delete-trade':
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            
+            try:
+                req_data = json.loads(post_data.decode('utf-8'))
+                index_to_delete = req_data.get('index')
+                
+                json_path = os.path.join(DIRECTORY, 'trades_cleaned.json')
+                
+                if index_to_delete is not None and os.path.exists(json_path):
+                    with open(json_path, 'r', encoding='utf-8') as f:
+                        trades = json.load(f)
+                    
+                    if 0 <= index_to_delete < len(trades):
+                        del trades[index_to_delete]
+                        
+                        with open(json_path, 'w', encoding='utf-8') as f:
+                            json.dump(trades, f, ensure_ascii=False, indent=2)
+                        
+                        response_data = {"status": "success", "message": "Operação excluída com sucesso!"}
+                    else:
+                        response_data = {"status": "error", "message": "Índice de operação inválido."}
+                else:
+                    response_data = {"status": "error", "message": "Dados inválidos ou arquivo não encontrado."}
+            except Exception as e:
+                response_data = {"status": "error", "message": str(e)}
+                
+            self.wfile.write(json.dumps(response_data).encode('utf-8'))
+
         elif self.path == '/api/sync':
             try:
                 env = os.environ.copy()

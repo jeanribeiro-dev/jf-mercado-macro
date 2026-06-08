@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch(`trades_cleaned.json?t=${Date.now()}`);
         rawTrades = await response.json();
+        rawTrades.forEach((t, i) => t._originalIndex = i);
         
         // Configurar Eventos
         setupTabEvents();
@@ -438,7 +439,7 @@ function renderTable() {
     tableBodyEl.innerHTML = '';
     
     if (sortedTrades.length === 0) {
-        tableBodyEl.innerHTML = `<tr><td colspan="8" class="text-center" style="text-align: center; padding: 30px; color: var(--text-secondary);">Nenhuma operação encontrada.</td></tr>`;
+        tableBodyEl.innerHTML = `<tr><td colspan="9" class="text-center" style="text-align: center; padding: 30px; color: var(--text-secondary);">Nenhuma operação encontrada.</td></tr>`;
         tableShowingEl.innerText = "Mostrando 0 de 0 operações";
         return;
     }
@@ -484,11 +485,17 @@ function renderTable() {
             <td>${p2Badge}</td>
             <td>${alvoBadge}</td>
             <td class="${resultClass}"><strong>${prefix}${formattedPnL}</strong></td>
+            <td>
+                <button class="action-btn delete-btn" style="background: transparent; color: var(--color-negative); padding: 4px; border: none; cursor: pointer;" onclick="deleteTrade(${t._originalIndex})" title="Excluir Operação">
+                    <i data-lucide="trash-2" style="width: 16px; height: 16px;"></i>
+                </button>
+            </td>
         `;
         tableBodyEl.appendChild(tr);
     });
 
     tableShowingEl.innerText = `Mostrando ${sortedTrades.length} de ${filteredTrades.length} operações`;
+    lucide.createIcons(); // Recria ícones para os botões recém adicionados
 }
 
 function formatDateBR(dateStr) {
@@ -594,6 +601,7 @@ tradeForm.addEventListener('submit', async (e) => {
             // Recarregar os dados do painel recém-salvos
             const getResponse = await fetch(`trades_cleaned.json?t=${Date.now()}`);
             rawTrades = await getResponse.json();
+            rawTrades.forEach((t, i) => t._originalIndex = i);
             updateDashboard();
         } else {
             alert("Erro ao salvar: " + result.message);
@@ -623,4 +631,32 @@ syncBtn.addEventListener('click', async () => {
         syncBtn.disabled = false;
     }
 });
+
+// Exclusão de Trade
+window.deleteTrade = async function(index) {
+    if (!confirm("Deseja realmente excluir esta operação?")) return;
+    
+    try {
+        const response = await fetch('/api/delete-trade', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ index })
+        });
+        
+        const result = await response.json();
+        if (result.status === 'success') {
+            alert(result.message);
+            // Recarregar os dados
+            const getResponse = await fetch(`trades_cleaned.json?t=${Date.now()}`);
+            rawTrades = await getResponse.json();
+            rawTrades.forEach((t, i) => t._originalIndex = i);
+            updateDashboard();
+        } else {
+            alert("Erro ao excluir: " + result.message);
+        }
+    } catch (err) {
+        console.error("Erro na requisição:", err);
+        alert("Erro de conexão com o servidor local.");
+    }
+};
 
