@@ -1,7 +1,7 @@
 // app.js - Lógica do Dashboard JF Mercado Macro
 
 let rawTrades = [];
-let currentTab = 'consolidated';
+let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
 let currentPeriod = 'all';
 let searchQuery = '';
 
@@ -42,22 +42,49 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function setupTabEvents() {
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    const btnAll = document.getElementById('btn-all');
+    const checkboxes = document.querySelectorAll('.strat-checkbox');
+
+    // Botão "Todas Juntas"
+    btnAll.addEventListener('click', () => {
+        btnAll.classList.add('active');
+        checkboxes.forEach(cb => cb.checked = true);
+        
+        selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
+        tabTitleEl.innerText = "Consolidado das Estratégias";
+        tabDescEl.innerText = "Visão agregada e curva de capital de todo o portfólio.";
+        
+        updateDashboard();
+    });
+
+    // Checkboxes das Estratégias individuais
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+            const checkedBoxes = document.querySelectorAll('.strat-checkbox:checked');
             
-            const targetBtn = e.currentTarget;
-            targetBtn.classList.add('active');
+            // Garantir que pelo menos uma estratégia esteja selecionada
+            if (checkedBoxes.length === 0) {
+                cb.checked = true; // Impede desmarcar a última
+                return;
+            }
             
-            currentTab = targetBtn.getAttribute('data-tab');
+            selectedStrategies = Array.from(checkedBoxes).map(box => box.value);
             
-            // Atualiza títulos
-            if (currentTab === 'consolidated') {
+            if (checkedBoxes.length === 4) {
+                btnAll.classList.add('active');
                 tabTitleEl.innerText = "Consolidado das Estratégias";
                 tabDescEl.innerText = "Visão agregada e curva de capital de todo o portfólio.";
             } else {
-                tabTitleEl.innerText = currentTab;
-                tabDescEl.innerText = `Resultados e histórico individual para a estratégia ${currentTab}.`;
+                btnAll.classList.remove('active');
+                
+                // Monta título customizado com base nas selecionadas
+                if (selectedStrategies.length === 1) {
+                    tabTitleEl.innerText = selectedStrategies[0];
+                    tabDescEl.innerText = `Resultados e histórico individual para a estratégia ${selectedStrategies[0]}.`;
+                } else {
+                    tabTitleEl.innerText = "Portfólio Customizado";
+                    tabDescEl.innerText = `Visualização combinada das estratégias selecionadas: ${selectedStrategies.join(', ')}.`;
+                }
             }
             
             updateDashboard();
@@ -85,14 +112,14 @@ function setupFilterEvents() {
     });
 }
 
-// Filtra os trades baseados no Tab e no Período ativos
+// Filtra os trades baseados nas estratégias e no Período ativos
 function getFilteredTrades() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     return rawTrades.filter(t => {
-        // Filtro de Tab
-        const matchTab = currentTab === 'consolidated' || t.strategy === currentTab;
+        // Filtro de Estratégias
+        const matchTab = selectedStrategies.includes(t.strategy);
         
         // Filtro de Período
         let matchPeriod = true;
@@ -133,8 +160,8 @@ function updateDashboard() {
 
 function formatCurrency(val) {
     // Format to Brazilian Real
-    const isIndice = currentTab === 'ABERTURA INDICE';
-    if (isIndice && currentTab !== 'consolidated') {
+    const isIndiceOnly = selectedStrategies.length === 1 && selectedStrategies[0] === 'ABERTURA INDICE';
+    if (isIndiceOnly) {
         // Se estiver apenas vendo Índice, exibe em pontos
         return `${val.toLocaleString('pt-BR')} pts`;
     }
