@@ -2,7 +2,7 @@
 
 let rawTrades = [];
 let currentTab = 'consolidated';
-let currentMonth = 'all';
+let currentPeriod = 'all';
 let searchQuery = '';
 
 // Elementos DOM
@@ -12,7 +12,10 @@ const wrMetricEl = document.getElementById('metric-wr');
 const tradesMetricEl = document.getElementById('metric-trades');
 const tableBodyEl = document.getElementById('trades-table-body');
 const tableShowingEl = document.getElementById('table-showing-text');
-const monthFilterEl = document.getElementById('month-filter');
+const periodFilterEl = document.getElementById('period-filter');
+const customDateInputsEl = document.getElementById('custom-date-inputs');
+const dateStartEl = document.getElementById('date-start');
+const dateEndEl = document.getElementById('date-end');
 const searchEl = document.getElementById('table-search');
 const tabTitleEl = document.getElementById('current-tab-title');
 const tabDescEl = document.getElementById('current-tab-desc');
@@ -63,10 +66,18 @@ function setupTabEvents() {
 }
 
 function setupFilterEvents() {
-    monthFilterEl.addEventListener('change', (e) => {
-        currentMonth = e.target.value;
+    periodFilterEl.addEventListener('change', (e) => {
+        currentPeriod = e.target.value;
+        if (currentPeriod === 'custom') {
+            customDateInputsEl.style.display = 'flex';
+        } else {
+            customDateInputsEl.style.display = 'none';
+        }
         updateDashboard();
     });
+
+    dateStartEl.addEventListener('change', updateDashboard);
+    dateEndEl.addEventListener('change', updateDashboard);
 
     searchEl.addEventListener('input', (e) => {
         searchQuery = e.target.value.toLowerCase();
@@ -74,16 +85,36 @@ function setupFilterEvents() {
     });
 }
 
-// Filtra os trades baseados no Tab e no Mês ativos
+// Filtra os trades baseados no Tab e no Período ativos
 function getFilteredTrades() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     return rawTrades.filter(t => {
         // Filtro de Tab
         const matchTab = currentTab === 'consolidated' || t.strategy === currentTab;
         
-        // Filtro de Mês
-        const matchMonth = currentMonth === 'all' || t.date.startsWith(currentMonth);
+        // Filtro de Período
+        let matchPeriod = true;
         
-        return matchTab && matchMonth;
+        if (currentPeriod === '7days' || currentPeriod === '30days') {
+            const tradeDate = new Date(t.date + 'T00:00:00');
+            const diffTime = today - tradeDate;
+            const diffDays = diffTime / (1000 * 60 * 60 * 24);
+            
+            const limit = currentPeriod === '7days' ? 7 : 30;
+            matchPeriod = diffDays >= 0 && diffDays <= limit;
+        } else if (currentPeriod === 'custom') {
+            const startVal = dateStartEl.value;
+            const endVal = dateEndEl.value;
+            let matchStart = true;
+            let matchEnd = true;
+            if (startVal) matchStart = t.date >= startVal;
+            if (endVal) matchEnd = t.date <= endVal;
+            matchPeriod = matchStart && matchEnd;
+        }
+        
+        return matchTab && matchPeriod;
     });
 }
 
