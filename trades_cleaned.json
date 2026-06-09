@@ -2247,5 +2247,24 @@
     "pnl": -2100,
     "stop": "OK",
     "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-09",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": 980,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-09",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
   }
 ]
