@@ -2266,5 +2266,13 @@
     "stop": "NÃO",
     "zero_zero": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-06-09",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205,
+    "stop": "NÃO",
+    "alvo": "OK"
   }
 ]
