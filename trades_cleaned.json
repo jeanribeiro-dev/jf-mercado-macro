@@ -2274,5 +2274,77 @@
     "pnl": 2205,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-06-10",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-10",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-10",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-10",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-11",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-11",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-11",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-11",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205,
+    "stop": "NÃO",
+    "alvo": "OK"
   }
 ]
