@@ -2081,10 +2081,10 @@
     "date": "2026-06-01",
     "strategy": "ABERTURA INDICE",
     "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "p1": "NÃO",
+    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -2099,10 +2099,10 @@
   {
     "date": "2026-06-01",
     "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
+    "direction": "COMPRA",
+    "pnl": -2100,
+    "stop": "OK",
+    "alvo": "NÃO"
   },
   {
     "date": "2026-06-02",
