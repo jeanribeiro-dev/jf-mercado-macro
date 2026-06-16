@@ -2367,6 +2367,15 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-06-12",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
     "date": "2026-06-15",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -2384,5 +2393,50 @@
     "p1": "OK",
     "p2": "OK",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-06-15",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-16",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-16",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520,
+    "stop": "NÃO",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-16",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-16",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100,
+    "stop": "OK",
+    "alvo": "NÃO"
   }
 ]
