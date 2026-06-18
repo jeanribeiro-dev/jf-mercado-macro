@@ -4,6 +4,7 @@ let rawTrades = [];
 let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
 let currentPeriod = 'all';
 let searchQuery = '';
+let isLocal = false;
 
 // Elementos DOM
 const pnlMetricEl = document.getElementById('metric-pnl');
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setupFilterEvents();
         
         // Verificar se está rodando via Servidor Local
-        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         if (!isLocal) {
             const statusDot = document.querySelector('.dot');
             statusDot.className = 'dot';
@@ -70,6 +71,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 syncBtn.title = 'Sincronização disponível apenas no painel local.';
                 openModalBtn.title = 'Registro disponível apenas no painel local.';
             }
+            
+            // Ocultar cabeçalho da coluna de Ações
+            const actionsHeader = document.getElementById('actions-header');
+            if (actionsHeader) actionsHeader.style.display = 'none';
             
             // Desabilitar botões
             syncBtn.style.opacity = '0.5';
@@ -522,11 +527,13 @@ function renderTable() {
             <td>${p2Badge}</td>
             <td>${alvoBadge}</td>
             <td class="${resultClass}"><strong>${prefix}${formattedPnL}</strong></td>
+            ${isLocal ? `
             <td>
                 <button class="action-btn delete-btn" style="background: transparent; color: var(--color-negative); padding: 4px; border: none; cursor: pointer;" onclick="deleteTrade(${t._originalIndex})" title="Excluir Operação">
                     <i data-lucide="trash-2" style="width: 16px; height: 16px;"></i>
                 </button>
             </td>
+            ` : ''}
         `;
         tableBodyEl.appendChild(tr);
     });
