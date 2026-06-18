@@ -16,6 +16,41 @@
     <link rel="stylesheet" href="style.css?v=1.0.1">
 </head>
 <body>
+    <!-- TradingView Ticker Tape Widget (Opção 1) -->
+    <div class="tradingview-widget-container" id="tv-ticker-tape" style="height: 44px; overflow: hidden; background: #131722;">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        {
+          "description": "Ibovespa",
+          "proName": "BMFBOVESPA:IBOV"
+        },
+        {
+          "description": "Mini Dólar",
+          "proName": "BMFBOVESPA:WDO1!"
+        },
+        {
+          "description": "Mini Índice",
+          "proName": "BMFBOVESPA:WIN1!"
+        },
+        {
+          "description": "S&P 500",
+          "proName": "OANDA:SPX500USD"
+        },
+        {
+          "description": "Bitcoin",
+          "proName": "BINANCE:BTCUSDT"
+        }
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "colorTheme": "dark",
+      "locale": "br"
+    }
+      </script>
+    </div>
     <div class="app-container">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -49,6 +84,8 @@
                     <span>DI Abertura</span>
                 </button>
             </nav>
+
+
 
             <div class="sidebar-footer">
                 <div class="status-indicator">
