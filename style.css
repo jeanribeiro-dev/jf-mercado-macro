@@ -442,6 +442,14 @@ body {
     border-bottom: none;
 }
 
+.trades-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.trades-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
 /* Badges */
 .badge {
     padding: 4px 8px;
