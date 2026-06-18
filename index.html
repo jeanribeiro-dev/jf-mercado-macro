@@ -110,7 +110,17 @@
                         <span class="metric-value negative" id="metric-dd">R$ 0,00</span>
                     </div>
                     <div class="metric-icon negative-bg">
-                        <i data-lucide="percent"></i>
+                        <i data-lucide="trending-down"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card" title="Máximo capital negativo alcançado em relação ao início do período selecionado.">
+                    <div class="metric-info">
+                        <h3>Rebaixamento Máx.</h3>
+                        <span class="metric-value negative" id="metric-initial-dd">R$ 0,00</span>
+                    </div>
+                    <div class="metric-icon negative-bg">
+                        <i data-lucide="alert-triangle"></i>
                     </div>
                 </div>
 
@@ -126,11 +136,24 @@
 
                 <div class="metric-card">
                     <div class="metric-info">
-                        <h3>Total de Operações</h3>
+                        <h3>Total Operações</h3>
                         <span class="metric-value" id="metric-trades">0</span>
                     </div>
                     <div class="metric-icon info-bg">
                         <i data-lucide="sliders"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Sequências</h3>
+                        <div style="display: flex; gap: 12px; margin-top: 4px;">
+                            <span class="metric-value positive" style="font-size: 1.1rem; display: flex; align-items: center; gap: 4px;"><i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i> <span id="metric-win-streak">0</span></span>
+                            <span class="metric-value negative" style="font-size: 1.1rem; display: flex; align-items: center; gap: 4px;"><i data-lucide="arrow-down" style="width: 14px; height: 14px;"></i> <span id="metric-loss-streak">0</span></span>
+                        </div>
+                    </div>
+                    <div class="metric-icon info-bg">
+                        <i data-lucide="activity"></i>
                     </div>
                 </div>
             </section>
@@ -277,7 +300,7 @@
     </div>
 
     <!-- Custom Logic -->
-    <script src="app.js?v=1.0.4"></script>
+    <script src="app.js?v=1.0.5"></script>
     <script>
         // Inicializar ícones do Lucide
         lucide.createIcons();

@@ -206,30 +206,47 @@ function updateDashboard() {
     // 3. Renderizar Tabela
     renderTable();
 }
-
 function formatCurrency(val) {
     // Format all to Brazilian Real
     return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
 function calculateMetrics(trades) {
+    const pnlMetricEl = document.getElementById('metric-pnl');
+    const ddMetricEl = document.getElementById('metric-dd');
+    const initialDdMetricEl = document.getElementById('metric-initial-dd');
+    const wrMetricEl = document.getElementById('metric-wr');
+    const tradesMetricEl = document.getElementById('metric-trades');
+    const winStreakEl = document.getElementById('metric-win-streak');
+    const lossStreakEl = document.getElementById('metric-loss-streak');
+    
     if (trades.length === 0) {
-        pnlMetricEl.innerText = formatCurrency(0);
-        ddMetricEl.innerText = formatCurrency(0);
+        pnlMetricEl.innerText = "R$ 0,00";
+        ddMetricEl.innerText = "R$ 0,00";
+        if (initialDdMetricEl) initialDdMetricEl.innerText = "R$ 0,00";
         wrMetricEl.innerText = "0.0%";
         tradesMetricEl.innerText = "0";
+        if (winStreakEl) winStreakEl.innerText = "0";
+        if (lossStreakEl) lossStreakEl.innerText = "0";
         pnlMetricEl.className = "metric-value";
         return;
     }
 
     let totalPnl = 0;
+
     let winCount = 0;
     let totalTrades = 0;
     
-    // Variáveis para drawdown
+    // Variáveis para drawdown e sequências
     let currentEquity = 0;
     let peakEquity = 0;
     let maxDrawdown = 0;
+    let maxInitialDrawdown = 0;
+    
+    let currentWinStreak = 0;
+    let currentLossStreak = 0;
+    let maxWinStreak = 0;
+    let maxLossStreak = 0;
 
     // Ordenar trades por data para calcular curva corretamente
     const sorted = [...trades].sort((a, b) => a.date.localeCompare(b.date));
@@ -238,7 +255,12 @@ function calculateMetrics(trades) {
         totalPnl += t.pnl;
         currentEquity += t.pnl;
         
-        // Drawdown
+        // Rebaixamento Máx (Initial Drawdown)
+        if (currentEquity < maxInitialDrawdown) {
+            maxInitialDrawdown = currentEquity;
+        }
+
+        // Drawdown Histórico
         if (currentEquity > peakEquity) {
             peakEquity = currentEquity;
         }
@@ -247,9 +269,20 @@ function calculateMetrics(trades) {
             maxDrawdown = dd;
         }
 
-        // Win Rate (considera ganhos > 0)
+        // Win Rate & Streaks (considera > 0 e < 0)
         if (t.pnl > 0) {
             winCount++;
+            currentWinStreak++;
+            currentLossStreak = 0;
+            if (currentWinStreak > maxWinStreak) maxWinStreak = currentWinStreak;
+        } else if (t.pnl < 0) {
+            currentLossStreak++;
+            currentWinStreak = 0;
+            if (currentLossStreak > maxLossStreak) maxLossStreak = currentLossStreak;
+        } else {
+            // Operações no zero-a-zero não resetam necessariamente, mas vamos zerar ambas para ser rigoroso
+            currentWinStreak = 0;
+            currentLossStreak = 0;
         }
         
         // Apenas conta como trade se não for INABILITADO
@@ -269,7 +302,11 @@ function calculateMetrics(trades) {
     }
 
     ddMetricEl.innerText = formatCurrency(maxDrawdown);
+    if (initialDdMetricEl) initialDdMetricEl.innerText = formatCurrency(Math.abs(maxInitialDrawdown));
+    
     tradesMetricEl.innerText = totalTrades;
+    if (winStreakEl) winStreakEl.innerText = maxWinStreak;
+    if (lossStreakEl) lossStreakEl.innerText = maxLossStreak;
     
     const wr = totalTrades > 0 ? (winCount / totalTrades) * 100 : 0;
     wrMetricEl.innerText = `${wr.toFixed(1)}%`;
