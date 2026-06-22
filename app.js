@@ -1,7 +1,7 @@
 // app.js - Lógica do Dashboard JF Mercado Macro
 
 let rawTrades = [];
-let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA', 'HEDGE ÍNDICE'];
+let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
 let currentPeriod = 'all';
 let searchQuery = '';
 let isLocal = false;
