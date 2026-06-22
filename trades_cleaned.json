@@ -10,16 +10,6 @@
   },
   {
     "date": "2026-03-04",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 4130.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-04",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": -2220.0,
@@ -36,629 +26,8 @@
     "alvo": "OK"
   },
   {
-    "date": "2026-03-05",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-05",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-05",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-05",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-06",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-06",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-06",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-06",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-09",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-09",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-09",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-09",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-10",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-10",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-10",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-10",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-11",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": 75.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-11",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-11",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-11",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-12",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": 75.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-12",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 4130.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-12",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-12",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-13",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-13",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-13",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-13",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-16",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": 3300.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-16",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-16",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-16",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-18",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": 75.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-18",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-18",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-18",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-19",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-19",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-19",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-19",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-20",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-20",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-20",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-20",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-23",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": 3300.0,
-    "stop": "NÃO",
-    "zero_zero": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-23",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-23",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-23",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-24",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": 3300.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-24",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 4130.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-24",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-24",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-25",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-25",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-25",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-25",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-26",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": 75.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-26",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-26",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-26",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-27",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "COMPRA",
-    "pnl": 75.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-27",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-27",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-27",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-30",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": -1800.0,
-    "stop": "OK",
-    "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-30",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-30",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-30",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-03-31",
-    "strategy": "ABERTURA DOLAR",
-    "direction": "VENDA",
-    "pnl": 75.0,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-03-31",
-    "strategy": "ABERTURA INDICE",
+    "date": "2026-03-04",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 4130.0,
     "stop": "NÃO",
@@ -667,6 +36,798 @@
     "alvo": "OK"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-04",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-05",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-05",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-06",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-06",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-09",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-09",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-10",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-10",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-11",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-11",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-12",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-12",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-13",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-13",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-16",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-16",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-17",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-18",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-18",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-19",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-19",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-20",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-20",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-23",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-23",
+    "direction": "COMPRA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 3300.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-24",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-24",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-25",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-25",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-26",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-26",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-27",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-27",
+    "direction": "COMPRA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": -1800.0,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-03-30",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-30",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
+    "date": "2026-03-31",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 75.0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-03-31",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
@@ -684,6 +845,25 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-03-31",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-03-31",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-04-01",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -694,7 +874,24 @@
   },
   {
     "date": "2026-04-01",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-01",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-01",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 280.0,
     "stop": "NÃO",
@@ -703,39 +900,12 @@
     "alvo": "NÃO"
   },
   {
-    "date": "2026-04-01",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-04-01",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
     "date": "2026-04-02",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-02",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -756,22 +926,22 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-04-02",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-04-06",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-06",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -792,22 +962,22 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-04-06",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-04-07",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-07",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -826,6 +996,16 @@
     "pnl": 2205.0,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-04-07",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
   },
   {
     "date": "2026-04-08",
@@ -835,16 +1015,6 @@
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": "OK"
-  },
-  {
-    "date": "2026-04-08",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
   },
   {
     "date": "2026-04-08",
@@ -864,8 +1034,35 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-04-08",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-04-09",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": null,
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-09",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-09",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "VENDA",
     "pnl": 0.0,
     "stop": "INABILITADO",
@@ -874,23 +1071,6 @@
     "alvo": null
   },
   {
-    "date": "2026-04-09",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": null,
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-04-09",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
     "date": "2026-04-10",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -898,16 +1078,6 @@
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": "OK"
-  },
-  {
-    "date": "2026-04-10",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
   },
   {
     "date": "2026-04-10",
@@ -925,6 +1095,25 @@
     "pnl": -2100.0,
     "stop": "OK",
     "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-10",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-04-10",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-04-13",
@@ -937,16 +1126,6 @@
   },
   {
     "date": "2026-04-13",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-13",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
     "pnl": 3203.48,
@@ -963,22 +1142,22 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-04-13",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-04-14",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-14",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -999,14 +1178,14 @@
     "alvo": "OK"
   },
   {
-    "date": "2026-04-15",
-    "strategy": "ABERTURA INDICE",
+    "date": "2026-04-14",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
-    "pnl": 0.0,
-    "stop": "INABILITADO",
-    "p1": null,
-    "p2": null,
-    "alvo": null
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
   },
   {
     "date": "2026-04-15",
@@ -1026,14 +1205,23 @@
     "alvo": "OK"
   },
   {
-    "date": "2026-04-16",
-    "strategy": "ABERTURA INDICE",
+    "date": "2026-04-15",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 0.0,
     "stop": "INABILITADO",
     "p1": null,
     "p2": null,
     "alvo": null
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-04-15",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
   },
   {
     "date": "2026-04-16",
@@ -1051,6 +1239,16 @@
     "pnl": 2205.0,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-04-16",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
   },
   {
     "date": "2026-04-17",
@@ -1063,16 +1261,6 @@
   },
   {
     "date": "2026-04-17",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-17",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": -2220.0,
@@ -1089,22 +1277,31 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-04-17",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-04-17",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
     "date": "2026-04-20",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-20",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1125,6 +1322,16 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-04-20",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-04-22",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -1135,7 +1342,24 @@
   },
   {
     "date": "2026-04-22",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-22",
+    "strategy": "DOLAR RED",
+    "direction": "VENDA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-22",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": -2520.0,
     "stop": "OK",
@@ -1144,21 +1368,13 @@
     "alvo": "NÃO"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
     "date": "2026-04-22",
-    "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -2220.0,
     "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-22",
-    "strategy": "DOLAR RED",
-    "direction": "VENDA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
   },
   {
     "date": "2026-04-23",
@@ -1167,16 +1383,6 @@
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-23",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1197,8 +1403,44 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-04-23",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-04-23",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
+  },
+  {
     "date": "2026-04-24",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-24",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-24",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "VENDA",
     "pnl": 0.0,
     "stop": "INABILITADO",
@@ -1207,23 +1449,6 @@
     "alvo": null
   },
   {
-    "date": "2026-04-24",
-    "strategy": "DI ABERTURA",
-    "direction": "COMPRA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-24",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
-    "stop": "NÃO",
-    "alvo": "OK"
-  },
-  {
     "date": "2026-04-27",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -1234,7 +1459,24 @@
   },
   {
     "date": "2026-04-27",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": -2220.0,
+    "stop": "OK",
+    "zero_zero": null,
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-04-27",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-04-27",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 280.0,
     "stop": "NÃO",
@@ -1243,21 +1485,13 @@
     "alvo": "NÃO"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
     "date": "2026-04-27",
-    "strategy": "DI ABERTURA",
     "direction": "VENDA",
-    "pnl": -2220.0,
-    "stop": "OK",
-    "zero_zero": null,
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-27",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRA",
-    "pnl": 2205.0,
     "stop": "NÃO",
-    "alvo": "OK"
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
   },
   {
     "date": "2026-04-28",
@@ -1266,16 +1500,6 @@
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-28",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -1296,22 +1520,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-04-28",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-04-28",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-04-29",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-04-29",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1332,14 +1565,23 @@
     "alvo": "NÃO"
   },
   {
-    "date": "2026-04-30",
-    "strategy": "ABERTURA INDICE",
+    "date": "2026-04-29",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
-    "pnl": 0.0,
-    "stop": "INABILITADO",
-    "p1": null,
-    "p2": null,
-    "alvo": null
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-04-29",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-04-30",
@@ -1359,22 +1601,22 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-04-30",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
     "date": "2026-05-04",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-04",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -1393,6 +1635,25 @@
     "pnl": 2205.0,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-05-04",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-04",
+    "direction": "COMPRRA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
   },
   {
     "date": "2026-05-05",
@@ -1405,16 +1666,6 @@
   },
   {
     "date": "2026-05-05",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-05",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": -2220.0,
@@ -1431,6 +1682,16 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-05",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-05-06",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -1438,16 +1699,6 @@
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-06",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 0.0,
-    "stop": "INABILITADO",
-    "p1": null,
-    "p2": null,
-    "alvo": null
   },
   {
     "date": "2026-05-06",
@@ -1467,22 +1718,22 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-06",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
     "date": "2026-05-07",
     "strategy": "ABERTURA DOLAR",
     "direction": "INABILITADO",
     "pnl": 0.0,
     "stop": null,
     "zero_zero": null,
-    "alvo": null
-  },
-  {
-    "date": "2026-05-07",
-    "strategy": "ABERTURA INDICE",
-    "direction": "INABILITADO",
-    "pnl": 0.0,
-    "stop": "INABILITADO",
-    "p1": null,
-    "p2": null,
     "alvo": null
   },
   {
@@ -1503,6 +1754,25 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-07",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": "INABILITADO",
+    "p1": null,
+    "p2": null,
+    "alvo": null
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-07",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-05-08",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -1513,7 +1783,24 @@
   },
   {
     "date": "2026-05-08",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-08",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-08",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 4130.0,
     "stop": "NÃO",
@@ -1522,21 +1809,13 @@
     "alvo": "OK"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
     "date": "2026-05-08",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": null
-  },
-  {
-    "date": "2026-05-08",
-    "strategy": "DOLAR RED",
     "direction": "COMPRRA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-05-11",
@@ -1549,16 +1828,6 @@
   },
   {
     "date": "2026-05-11",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-11",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": -2220.0,
@@ -1575,22 +1844,22 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-11",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-05-12",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-12",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -1611,22 +1880,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-12",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-12",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-05-13",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": -1800.0,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-13",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1644,6 +1922,16 @@
     "direction": "VENDA",
     "pnl": -2100.0,
     "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-13",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1657,7 +1945,24 @@
   },
   {
     "date": "2026-05-14",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "INABILITADO",
+    "pnl": 0.0,
+    "stop": null,
+    "zero_zero": null,
+    "alvo": null
+  },
+  {
+    "date": "2026-05-14",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": -2100.0,
+    "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-14",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "INABILITADO",
     "pnl": 0.0,
     "stop": "INABILITADO",
@@ -1666,23 +1971,6 @@
     "alvo": null
   },
   {
-    "date": "2026-05-14",
-    "strategy": "DI ABERTURA",
-    "direction": "INABILITADO",
-    "pnl": 0.0,
-    "stop": null,
-    "zero_zero": null,
-    "alvo": null
-  },
-  {
-    "date": "2026-05-14",
-    "strategy": "DOLAR RED",
-    "direction": "COMPRRA",
-    "pnl": -2100.0,
-    "stop": "OK",
-    "alvo": "NÃO"
-  },
-  {
     "date": "2026-05-15",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
@@ -1690,16 +1978,6 @@
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": "OK"
-  },
-  {
-    "date": "2026-05-15",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
   },
   {
     "date": "2026-05-15",
@@ -1719,6 +1997,25 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-05-15",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-15",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-05-18",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -1726,16 +2023,6 @@
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": "OK"
-  },
-  {
-    "date": "2026-05-18",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
   },
   {
     "date": "2026-05-18",
@@ -1752,6 +2039,16 @@
     "direction": "COMPRRA",
     "pnl": -2100.0,
     "stop": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-18",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -1762,16 +2059,6 @@
     "stop": "OK",
     "zero_zero": "NÃO",
     "alvo": "OK"
-  },
-  {
-    "date": "2026-05-19",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
   },
   {
     "date": "2026-05-19",
@@ -1791,6 +2078,25 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-19",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-19",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-05-20",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -1801,7 +2107,24 @@
   },
   {
     "date": "2026-05-20",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": null
+  },
+  {
+    "date": "2026-05-20",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRRA",
+    "pnl": 2205.0,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-05-20",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 4130.0,
     "stop": "NÃO",
@@ -1810,21 +2133,13 @@
     "alvo": "OK"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
     "date": "2026-05-20",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
-    "stop": "NÃO",
-    "zero_zero": "OK",
-    "alvo": null
-  },
-  {
-    "date": "2026-05-20",
-    "strategy": "DOLAR RED",
     "direction": "COMPRRA",
-    "pnl": 2205.0,
     "stop": "NÃO",
-    "alvo": "OK"
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-05-21",
@@ -1837,16 +2152,6 @@
   },
   {
     "date": "2026-05-21",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-21",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
     "pnl": 3203.48,
@@ -1863,22 +2168,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-21",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-21",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
+  },
+  {
     "date": "2026-05-22",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-22",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1897,6 +2211,25 @@
     "pnl": 2205.0,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-05-22",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-22",
+    "direction": "COMPRRA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
   },
   {
     "date": "2026-05-25",
@@ -1909,16 +2242,6 @@
   },
   {
     "date": "2026-05-25",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-25",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": 3203.48,
@@ -1933,6 +2256,25 @@
     "pnl": 2205.0,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-05-25",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-25",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
   },
   {
     "date": "2026-05-26",
@@ -1961,22 +2303,21 @@
     "alvo": "NÃO"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-26",
+    "direction": "COMPRRA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
     "date": "2026-05-27",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-27",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -1995,6 +2336,25 @@
     "pnl": 2205.0,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-05-27",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-27",
+    "direction": "COMPRRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-05-28",
@@ -2007,16 +2367,6 @@
   },
   {
     "date": "2026-05-28",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": -2520.0,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-28",
     "strategy": "DI ABERTURA",
     "direction": "COMPRA",
     "pnl": 3203.48,
@@ -2033,22 +2383,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-05-28",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": -2520.0,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-28",
+    "direction": "COMPRRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-05-29",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-05-29",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 910.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -2067,6 +2426,25 @@
     "pnl": -2100.0,
     "stop": "OK",
     "alvo": "NÃO"
+  },
+  {
+    "date": "2026-05-29",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 910.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-05-29",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-06-01",
@@ -2079,16 +2457,6 @@
   },
   {
     "date": "2026-06-01",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 0,
-    "stop": "INABILITADO",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-01",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": -2220.0,
@@ -2105,22 +2473,22 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-06-01",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
     "date": "2026-06-02",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": 75.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-02",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -2141,22 +2509,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-06-02",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-02",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "NÃO",
+    "pnl": 50.0
+  },
+  {
     "date": "2026-06-03",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 3300.0,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-06-03",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 4130.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "OK"
   },
   {
@@ -2177,6 +2554,25 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-06-03",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 4130.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-03",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-06-05",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
@@ -2184,16 +2580,6 @@
     "stop": "NÃO",
     "zero_zero": "OK",
     "alvo": "OK"
-  },
-  {
-    "date": "2026-06-05",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 280.0,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "NÃO",
-    "alvo": "NÃO"
   },
   {
     "date": "2026-06-05",
@@ -2213,22 +2599,31 @@
     "alvo": null
   },
   {
+    "date": "2026-06-05",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 280.0,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-05",
+    "direction": "COMPRA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
     "date": "2026-06-08",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 105,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-08",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520,
-    "stop": "NÃO",
-    "p1": "NÃO",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -2249,13 +2644,13 @@
     "alvo": "NÃO"
   },
   {
-    "date": "2026-06-09",
-    "strategy": "ABERTURA INDICE",
+    "date": "2026-06-08",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
-    "pnl": 980,
+    "pnl": -2520,
     "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -2276,22 +2671,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-06-09",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 980,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-09",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-06-10",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 0,
     "stop": "INABILITADO",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-10",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 0,
-    "stop": "INABILITADO",
-    "p1": "NÃO",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -2310,6 +2714,25 @@
     "pnl": 0,
     "stop": "INABILITADO",
     "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-10",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 0,
+    "stop": "INABILITADO",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-10",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
   },
   {
     "date": "2026-06-11",
@@ -2322,16 +2745,6 @@
   },
   {
     "date": "2026-06-11",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-11",
     "strategy": "DI ABERTURA",
     "direction": "VENDA",
     "pnl": 3203.48,
@@ -2348,22 +2761,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-06-11",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-11",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-06-12",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": -1800,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-12",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
     "alvo": "NÃO"
   },
   {
@@ -2376,6 +2798,25 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-06-12",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-12",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
     "date": "2026-06-15",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
@@ -2386,7 +2827,16 @@
   },
   {
     "date": "2026-06-15",
-    "strategy": "ABERTURA INDICE",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.48,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-15",
+    "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": 4130,
     "stop": "NÃO",
@@ -2395,13 +2845,13 @@
     "alvo": "OK"
   },
   {
+    "strategy": "HEDGE ÍNDICE",
     "date": "2026-06-15",
-    "strategy": "DI ABERTURA",
-    "direction": "VENDA",
-    "pnl": 3203.48,
+    "direction": "COMPRA",
     "stop": "NÃO",
-    "zero_zero": "NÃO",
-    "alvo": "OK"
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
   },
   {
     "date": "2026-06-16",
@@ -2410,16 +2860,6 @@
     "pnl": -1800,
     "stop": "NÃO",
     "zero_zero": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-06-16",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2520,
-    "stop": "NÃO",
-    "p1": "NÃO",
-    "p2": "NÃO",
     "alvo": "OK"
   },
   {
@@ -2440,22 +2880,31 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-06-16",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2520,
+    "stop": "NÃO",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-16",
+    "direction": "VENDA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-06-17",
     "strategy": "ABERTURA DOLAR",
     "direction": "VENDA",
     "pnl": 3300,
     "stop": "NÃO",
     "zero_zero": "NÃO",
-    "alvo": "OK"
-  },
-  {
-    "date": "2026-06-17",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": 4130,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "OK"
   },
   {
@@ -2476,22 +2925,31 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-06-17",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": 4130,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "OK"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-17",
+    "direction": "COMPRA",
+    "stop": "NÃO",
+    "p1": "OK",
+    "alvo": "OK",
+    "pnl": 3750.0
+  },
+  {
     "date": "2026-06-18",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": 125,
     "stop": "NÃO",
     "zero_zero": "OK",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-18",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 980,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -2512,22 +2970,31 @@
     "alvo": "OK"
   },
   {
+    "date": "2026-06-18",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 980,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "strategy": "HEDGE ÍNDICE",
+    "date": "2026-06-18",
+    "direction": "VENDA",
+    "stop": "OK",
+    "p1": "NÃO",
+    "alvo": "NÃO",
+    "pnl": -2500.0
+  },
+  {
     "date": "2026-06-19",
     "strategy": "ABERTURA DOLAR",
     "direction": "COMPRA",
     "pnl": -1800,
     "stop": "OK",
     "zero_zero": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-19",
-    "strategy": "ABERTURA INDICE",
-    "direction": "VENDA",
-    "pnl": 980,
-    "stop": "NÃO",
-    "p1": "OK",
-    "p2": "OK",
     "alvo": "NÃO"
   },
   {
@@ -2546,5 +3013,57 @@
     "pnl": 2205,
     "stop": "NÃO",
     "alvo": "OK"
+  },
+  {
+    "date": "2026-06-19",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 980,
+    "stop": "NÃO",
+    "p1": "OK",
+    "p2": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-22",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "VENDA",
+    "pnl": 125,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-22",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2520,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-22",
+    "strategy": "DI ABERTURA",
+    "direction": "VENDA",
+    "pnl": 3203.4,
+    "stop": "NÃO",
+    "zero_zero": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-22",
+    "strategy": "DOLAR RED",
+    "direction": "COMPRA",
+    "pnl": 2205,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-22",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": -2500
   }
 ]
