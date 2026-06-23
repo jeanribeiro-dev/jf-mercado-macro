@@ -1,7 +1,7 @@
 // app.js - Lógica do Dashboard JF Mercado Macro
 
 let rawTrades = [];
-let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
+let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'HEDGE DÓLAR', 'DI ABERTURA', 'HEDGE ÍNDICE'];
 let currentPeriod = 'all';
 let searchQuery = '';
 let isLocal = false;
@@ -99,7 +99,7 @@ function setupTabEvents() {
         btnAll.classList.add('active');
         stratBtns.forEach(btn => btn.classList.add('active'));
         
-        selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'DOLAR RED', 'DI ABERTURA'];
+        selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'HEDGE DÓLAR', 'DI ABERTURA', 'HEDGE ÍNDICE'];
         tabTitleEl.innerText = "Consolidado das Estratégias";
         tabDescEl.innerText = "Visão agregada e curva de capital de todo o portfólio.";
         
@@ -124,7 +124,7 @@ function setupTabEvents() {
             const currentActiveBtns = document.querySelectorAll('.strat-btn.active');
             selectedStrategies = Array.from(currentActiveBtns).map(b => b.getAttribute('data-strategy'));
             
-            if (currentActiveBtns.length === 4) {
+            if (currentActiveBtns.length === 5) {
                 btnAll.classList.add('active');
                 tabTitleEl.innerText = "Consolidado das Estratégias";
                 tabDescEl.innerText = "Visão agregada e curva de capital de todo o portfólio.";
@@ -589,7 +589,7 @@ function updateFormFields() {
         labelP1.innerText = 'Parcial 1 / 0x0';
         groupP2.style.display = 'none';
         groupAlvo.style.display = 'flex';
-    } else if (strat === 'DOLAR RED') {
+    } else if (strat === 'HEDGE DÓLAR') {
         groupP1.style.display = 'none';
         groupP2.style.display = 'none';
         groupAlvo.style.display = 'flex';
@@ -617,7 +617,7 @@ tradeForm.addEventListener('submit', async (e) => {
         status.stop = stopVal;
         status.zero_zero = document.getElementById('trade-p1').value;
         status.alvo = document.getElementById('trade-alvo').value;
-    } else if (strategyVal === 'DOLAR RED') {
+    } else if (strategyVal === 'HEDGE DÓLAR') {
         status.stop = stopVal;
         status.alvo = document.getElementById('trade-alvo').value;
     }
