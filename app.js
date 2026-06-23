@@ -3,6 +3,7 @@
 let rawTrades = [];
 let selectedStrategies = ['ABERTURA INDICE', 'ABERTURA DOLAR', 'HEDGE DÓLAR', 'DI ABERTURA', 'HEDGE ÍNDICE'];
 let currentPeriod = 'all';
+let currentProfile = 'arrojado';
 let searchQuery = '';
 let isLocal = false;
 
@@ -41,7 +42,24 @@ const groupP2 = document.getElementById('group-p2');
 const groupAlvo = document.getElementById('group-alvo');
 
 // Inicialização
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', init);
+
+// Listeners dos Perfis de Risco
+const profileBtns = document.querySelectorAll('.profile-btn');
+profileBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all
+        profileBtns.forEach(b => b.classList.remove('active'));
+        // Add active to clicked
+        btn.classList.add('active');
+        // Update state
+        currentProfile = btn.getAttribute('data-profile');
+        // Re-render
+        updateDashboard();
+    });
+});
+
+async function init() {
     try {
         const response = await fetch(`trades_cleaned.json?t=${Date.now()}`);
         rawTrades = await response.json();
@@ -88,7 +106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (error) {
         console.error("Erro ao carregar dados dos trades:", error);
     }
-});
+}
 
 function setupTabEvents() {
     const btnAll = document.getElementById('btn-all');
@@ -171,12 +189,17 @@ function getFilteredTrades() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    return rawTrades.filter(t => {
-        // Filtro de Estratégias
-        const matchTab = selectedStrategies.includes(t.strategy);
-        
-        // Filtro de Período
-        let matchPeriod = true;
+    let multiplier = 1.0;
+    if (currentProfile === 'moderado') multiplier = 0.5;
+    if (currentProfile === 'conservador') multiplier = 0.3;
+
+    return rawTrades
+        .filter(t => {
+            // Filtro de Estratégias
+            const matchTab = selectedStrategies.includes(t.strategy);
+            
+            // Filtro de Período
+            let matchPeriod = true;
         
         if (currentPeriod === '7days' || currentPeriod === '30days') {
             const tradeDate = new Date(t.date + 'T00:00:00');
@@ -195,8 +218,14 @@ function getFilteredTrades() {
             matchPeriod = matchStart && matchEnd;
         }
         
-        return matchTab && matchPeriod;
-    });
+            return matchTab && matchPeriod;
+        })
+        .map(t => {
+            return {
+                ...t,
+                pnl: t.pnl * multiplier
+            };
+        });
 }
 
 function updateDashboard() {
@@ -225,8 +254,14 @@ function calculateMetrics(trades) {
     const winStreakEl = document.getElementById('metric-win-streak');
     const lossStreakEl = document.getElementById('metric-loss-streak');
     
+    const roiMetricEl = document.getElementById('metric-roi');
+    
     if (trades.length === 0) {
         pnlMetricEl.innerText = "R$ 0,00";
+        if (roiMetricEl) {
+            roiMetricEl.innerText = "0.00%";
+            roiMetricEl.className = "roi-badge";
+        }
         ddMetricEl.innerText = "R$ 0,00";
         if (initialDdMetricEl) initialDdMetricEl.innerText = "R$ 0,00";
         wrMetricEl.innerText = "0.0%";
@@ -297,13 +332,23 @@ function calculateMetrics(trades) {
     });
 
     // PnL classe css
+    pnlMetricEl.className = "metric-value";
     pnlMetricEl.innerText = formatCurrency(totalPnl);
     if (totalPnl > 0) {
-        pnlMetricEl.className = "metric-value positive";
+        pnlMetricEl.classList.add("positive");
+        pnlMetricEl.innerText = "+" + pnlMetricEl.innerText;
+        if (roiMetricEl) roiMetricEl.className = "roi-badge positive";
     } else if (totalPnl < 0) {
-        pnlMetricEl.className = "metric-value negative";
+        pnlMetricEl.classList.add("negative");
+        if (roiMetricEl) roiMetricEl.className = "roi-badge negative";
     } else {
-        pnlMetricEl.className = "metric-value";
+        if (roiMetricEl) roiMetricEl.className = "roi-badge";
+    }
+
+    if (roiMetricEl) {
+        const roi = (totalPnl / 50000) * 100;
+        const sign = roi > 0 ? '+' : '';
+        roiMetricEl.innerText = `${sign}${roi.toFixed(2)}%`;
     }
 
     ddMetricEl.innerText = formatCurrency(maxDrawdown);
