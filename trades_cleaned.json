@@ -3121,20 +3121,16 @@
   },
   {
     "date": "2026-06-25",
-    "strategy": "ABERTURA INDICE",
-    "direction": "COMPRA",
-    "pnl": -2500,
-    "stop": "OK",
-    "p1": "NÃO",
-    "p2": "NÃO",
-    "alvo": "NÃO"
-  },
-  {
-    "date": "2026-06-25",
     "strategy": "HEDGE DÓLAR",
     "direction": "VENDA",
     "pnl": -2100,
     "stop": "OK",
     "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-25",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2500
   }
 ]
