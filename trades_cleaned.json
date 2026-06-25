@@ -3114,6 +3114,12 @@
     "alvo": "NÃO"
   },
   {
+    "date": "2026-06-24",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 3750
+  },
+  {
     "date": "2026-06-25",
     "strategy": "ABERTURA INDICE",
     "direction": "COMPRA",
