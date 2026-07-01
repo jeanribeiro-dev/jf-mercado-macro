@@ -35,6 +35,14 @@ const tradeForm = document.getElementById('trade-form');
 const tradeStrategySelect = document.getElementById('trade-strategy');
 const syncBtn = document.getElementById('sync-btn');
 
+// Lógica de Modal do PDF
+const pdfModal = document.getElementById('pdf-modal');
+const openPdfModalBtn = document.getElementById('open-pdf-modal-btn');
+const closePdfModalBtn = document.getElementById('close-pdf-modal-btn');
+const cancelPdfBtn = document.getElementById('cancel-pdf-btn');
+const pdfForm = document.getElementById('pdf-form');
+const pdfMonthSelect = document.getElementById('pdf-month-select');
+
 // Elementos de formulário dinâmicos
 const groupP1 = document.getElementById('group-p1');
 const labelP1 = document.getElementById('label-p1');
@@ -68,6 +76,8 @@ async function init() {
         // Configurar Eventos
         setupTabEvents();
         setupFilterEvents();
+        setupPdfReportEvents();
+        loadPdfMonths();
         
         // Verificar se está rodando via Servidor Local
         isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
@@ -748,4 +758,366 @@ window.deleteTrade = async function(index) {
         alert("Erro de conexão com o servidor local.");
     }
 };
+
+// ==========================================
+// FUNÇÕES DE EXPORTAÇÃO MENSAL EM PDF
+// ==========================================
+
+function loadPdfMonths() {
+    if (!pdfMonthSelect) return;
+    
+    // Extrai meses únicos das operações YYYY-MM
+    const months = new Set();
+    rawTrades.forEach(t => {
+        if (t.date && t.date.length >= 7) {
+            months.add(t.date.substring(0, 7));
+        }
+    });
+    
+    // Ordena de forma decrescente (mais recente primeiro)
+    const sortedMonths = Array.from(months).sort((a, b) => b.localeCompare(a));
+    
+    pdfMonthSelect.innerHTML = '';
+    sortedMonths.forEach(ym => {
+        const option = document.createElement('option');
+        option.value = ym;
+        option.innerText = formatMonthYear(ym);
+        pdfMonthSelect.appendChild(option);
+    });
+}
+
+function formatMonthYear(ymString) {
+    const [year, month] = ymString.split('-');
+    const monthNames = [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+    const monthIdx = parseInt(month, 10) - 1;
+    return `${monthNames[monthIdx]} de ${year}`;
+}
+
+function setupPdfReportEvents() {
+    if (!openPdfModalBtn || !pdfModal || !closePdfModalBtn || !cancelPdfBtn || !pdfForm) return;
+    
+    openPdfModalBtn.addEventListener('click', () => {
+        loadPdfMonths(); // Recarrega sempre para garantir novos dados inseridos
+        pdfModal.classList.add('active');
+    });
+    
+    const closePdfModal = () => {
+        pdfModal.classList.remove('active');
+    };
+    
+    closePdfModalBtn.addEventListener('click', closePdfModal);
+    cancelPdfBtn.addEventListener('click', closePdfModal);
+    
+    pdfModal.addEventListener('click', (e) => {
+        if (e.target === pdfModal) {
+            closePdfModal();
+        }
+    });
+    
+    pdfForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const selectedMonth = pdfMonthSelect.value;
+        if (!selectedMonth) return;
+        
+        // Desabilitar o botão enquanto gera o PDF
+        const submitBtn = pdfForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerText;
+        submitBtn.innerText = "Gerando PDF...";
+        submitBtn.disabled = true;
+        
+        try {
+            await generatePdfReport(selectedMonth);
+            closePdfModal();
+        } catch (err) {
+            console.error("Erro ao gerar PDF:", err);
+            alert("Ocorreu um erro ao gerar o PDF. Verifique o console.");
+        } finally {
+            submitBtn.innerText = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}
+
+async function generatePdfReport(selectedMonth) {
+    // 1. Filtrar operações do mês excluindo DI ABERTURA
+    // E aplicando o perfil de risco atual!
+    let multiplier = 1.0;
+    if (currentProfile === 'moderado') multiplier = 0.5;
+    else if (currentProfile === 'conservador') multiplier = 0.3;
+    
+    const monthlyTrades = rawTrades.filter(t => {
+        return t.date.startsWith(selectedMonth) && t.strategy !== 'DI ABERTURA';
+    }).map(t => {
+        return {
+            ...t,
+            pnl: t.pnl * multiplier
+        };
+    });
+    
+    if (monthlyTrades.length === 0) {
+        alert("Nenhuma operação encontrada para o mês selecionado (excluindo DI).");
+        return;
+    }
+    
+    // Ordenar trades por data (crescente para calcular curva)
+    const sortedTrades = [...monthlyTrades].sort((a, b) => a.date.localeCompare(b.date));
+    
+    // 2. Calcular Métricas do Mês
+    let totalPnl = 0;
+    let winCount = 0;
+    let totalTrades = 0;
+    let peakEquity = 0;
+    let currentEquity = 0;
+    let maxDrawdown = 0;
+    
+    const dailyData = {};
+    
+    sortedTrades.forEach(t => {
+        totalPnl += t.pnl;
+        currentEquity += t.pnl;
+        
+        // Acumular dados diários para o gráfico
+        if (!dailyData[t.date]) {
+            dailyData[t.date] = 0;
+        }
+        dailyData[t.date] += t.pnl;
+        
+        // Drawdown
+        if (currentEquity > peakEquity) {
+            peakEquity = currentEquity;
+        }
+        const dd = peakEquity - currentEquity;
+        if (dd > maxDrawdown) {
+            maxDrawdown = dd;
+        }
+        
+        // Win Rate
+        if (t.pnl > 0) {
+            winCount++;
+        }
+        if (t.stop !== 'INABILITADO' && t.stop !== 'INABILITOU') {
+            totalTrades++;
+        }
+    });
+    
+    const winRate = totalTrades > 0 ? (winCount / totalTrades) * 100 : 0;
+    const roi = (totalPnl / 50000) * 100;
+    
+    // Preparar dados do gráfico
+    const dates = Object.keys(dailyData).sort();
+    let cumEquity = 0;
+    const equityValues = [0];
+    dates.forEach(d => {
+        cumEquity += dailyData[d];
+        equityValues.push(cumEquity);
+    });
+    const chartDates = ["Início", ...dates];
+    
+    // 3. Renderizar gráfico temporário (LIGHT THEME para o PDF)
+    const tempChartDiv = document.createElement('div');
+    tempChartDiv.style.width = '640px';
+    tempChartDiv.style.height = '280px';
+    
+    const offscreen = document.createElement('div');
+    offscreen.style.position = 'absolute';
+    offscreen.style.left = '-9999px';
+    offscreen.appendChild(tempChartDiv);
+    document.body.appendChild(offscreen);
+    
+    const tempChartOptions = {
+        theme: { mode: 'light' },
+        chart: {
+            type: 'line',
+            width: 640,
+            height: 280,
+            foreColor: '#475569',
+            background: '#ffffff',
+            toolbar: { show: false },
+            animations: { enabled: false }
+        },
+        grid: {
+            borderColor: '#e2e8f0',
+            yaxis: { lines: { show: true } }
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 3
+        },
+        colors: ['#2979FF'], // Blue accent
+        series: [{
+            name: 'Curva de Capital',
+            data: equityValues
+        }],
+        xaxis: {
+            categories: chartDates.map(d => {
+                if (d === "Início") return d;
+                const parts = d.split('-');
+                return `${parts[2]}/${parts[1]}`;
+            }),
+            labels: {
+                style: { fontSize: '9px', fontWeight: 500 }
+            }
+        },
+        yaxis: {
+            labels: {
+                formatter: (val) => formatCurrency(val),
+                style: { fontSize: '9px', fontWeight: 500 }
+            }
+        }
+    };
+    
+    const tempChart = new ApexCharts(tempChartDiv, tempChartOptions);
+    await tempChart.render();
+    
+    // Esperar um ciclo de renderização
+    await new Promise(resolve => setTimeout(resolve, 150));
+    
+    const { imgURI } = await tempChart.dataURI();
+    
+    // Destruir gráfico e remover div temporária
+    tempChart.destroy();
+    document.body.removeChild(offscreen);
+    
+    // 4. Montar a tabela de operações
+    let tableRows = '';
+    // Mostra do mais recente para o mais antigo na tabela
+    const displayTrades = [...sortedTrades].reverse();
+    
+    displayTrades.forEach(t => {
+        const formattedDate = formatDateBR(t.date);
+        const dirClass = t.direction === 'COMPRA' ? 'pdf-badge compra' : 'pdf-badge venda';
+        const dirText = t.direction === 'COMPRA' ? 'Compra' : 'Venda';
+        
+        const stopBadge = t.stop === 'OK' ? '<span class="pdf-badge ok">OK</span>' : (t.stop === 'INABILITADO' || t.stop === 'INABILITOU' ? '<span class="pdf-badge inab">INAB.</span>' : '<span class="pdf-badge no">-</span>');
+        const p1Badge = t.p1 === 'OK' || t.zero_zero === 'OK' ? '<span class="pdf-badge ok">OK</span>' : '<span class="pdf-badge no">-</span>';
+        const p2Badge = t.p2 === 'OK' ? '<span class="pdf-badge ok">OK</span>' : '<span class="pdf-badge no">-</span>';
+        const alvoBadge = t.alvo === 'OK' ? '<span class="pdf-badge ok">OK</span>' : '<span class="pdf-badge no">-</span>';
+        
+        const pnlClass = t.pnl > 0 ? 'positive' : (t.pnl < 0 ? 'negative' : '');
+        const prefix = t.pnl > 0 ? '+' : '';
+        const formattedPnl = formatCurrency(t.pnl);
+        
+        tableRows += `
+            <tr>
+                <td>${formattedDate}</td>
+                <td><strong>${t.strategy}</strong></td>
+                <td><span class="${dirClass}">${dirText}</span></td>
+                <td>${stopBadge}</td>
+                <td>${p1Badge}</td>
+                <td>${p2Badge}</td>
+                <td>${alvoBadge}</td>
+                <td class="${pnlClass}"><strong>${prefix}${formattedPnl}</strong></td>
+            </tr>
+        `;
+    });
+    
+    const monthLabel = formatMonthYear(selectedMonth);
+    const profileLabel = currentProfile.toUpperCase();
+    const multiplierPct = currentProfile === 'arrojado' ? '100%' : (currentProfile === 'moderado' ? '50%' : '30%');
+    
+    // 5. Estrutura HTML do Relatório
+    const reportContainer = document.createElement('div');
+    reportContainer.className = 'pdf-report';
+    reportContainer.innerHTML = `
+        <!-- CABEÇALHO -->
+        <div class="pdf-header">
+            <div class="pdf-logo">
+                <svg class="pdf-logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px; color: #2979FF;">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <div class="pdf-logo-text">
+                    <h1 style="margin: 0; font-size: 16px; font-weight: 700; color: #0f172a; font-family: 'Inter', sans-serif;">JF MERCADO MACRO</h1>
+                    <span style="font-size: 10px; color: #64748b; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Performance Report</span>
+                </div>
+            </div>
+            <div class="pdf-title-area">
+                <h2 style="margin: 0; font-size: 18px; font-weight: 700; color: #0f172a; font-family: 'Inter', sans-serif;">Relatório Mensal - ${monthLabel}</h2>
+                <p style="margin: 2px 0 0 0; font-size: 11px; color: #64748b;">Perfil de Risco: <strong>${profileLabel} (${multiplierPct})</strong> | Capital Base: R$ 50.000,00</p>
+            </div>
+        </div>
+        
+        <!-- CARDS DE MÉTRICAS -->
+        <div class="pdf-metrics-grid">
+            <div class="pdf-metric-card">
+                <h4>Resultado Total</h4>
+                <p class="${totalPnl >= 0 ? 'positive' : 'negative'}">
+                    ${totalPnl >= 0 ? '+' : ''}${formatCurrency(totalPnl)}
+                </p>
+            </div>
+            <div class="pdf-metric-card">
+                <h4>Retorno / ROI</h4>
+                <p class="${totalPnl >= 0 ? 'positive' : 'negative'}">
+                    ${totalPnl >= 0 ? '+' : ''}${roi.toFixed(2)}%
+                </p>
+            </div>
+            <div class="pdf-metric-card">
+                <h4>Drawdown Max</h4>
+                <p class="negative">${formatCurrency(maxDrawdown)}</p>
+            </div>
+            <div class="pdf-metric-card">
+                <h4>Taxa de Acerto</h4>
+                <p>${winRate.toFixed(1)}%</p>
+            </div>
+            <div class="pdf-metric-card">
+                <h4>Operações</h4>
+                <p>${sortedTrades.length} trades</p>
+            </div>
+        </div>
+        
+        <!-- SEÇÃO DE GRÁFICO -->
+        <div class="pdf-chart-section">
+            <h3>Curva de Capital Acumulada no Mês</h3>
+            <div class="pdf-chart-container">
+                <img src="${imgURI}" alt="Equity Curve"/>
+            </div>
+        </div>
+        
+        <div class="html2pdf__page-break"></div>
+        
+        <!-- SEÇÃO DE OPERAÇÕES -->
+        <div class="pdf-table-section">
+            <h3>Detalhamento das Operações (Excluindo DI Abertura)</h3>
+            <table class="pdf-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Estratégia</th>
+                        <th>Direção</th>
+                        <th>Stop</th>
+                        <th>Parcial 1 / 0x0</th>
+                        <th>Parcial 2</th>
+                        <th>Alvo Final</th>
+                        <th>Resultado (Pts/R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${tableRows}
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- AVISO LEGAL -->
+        <div class="pdf-disclaimer">
+            <strong>AVISO IMPORTANTE:</strong> Os resultados contidos neste documento são brutos e refletem unicamente o desempenho operacional das estratégias. Não estão deduzidos os custos operacionais de negociação (como corretagem institucional, taxas de registro, emolumentos da B3 e Imposto Sobre Serviços - ISS), tampouco impostos federais incidentes sobre ganho de capital em renda variável (Imposto de Renda retido na fonte de 1% para fins de dedução e o imposto de 20% a ser recolhido mensalmente via DARF pelo próprio investidor para operações de Day Trade).
+        </div>
+    `;
+    
+    // 6. Exportar usando html2pdf.js
+    const filenameMonth = selectedMonth.replace('-', '_');
+    const opt = {
+        margin: [10, 10, 15, 10], // top, left, bottom, right
+        filename: `JF_Relatorio_${filenameMonth}_${currentProfile}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2.5, useCORS: true, letterRendering: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+    
+    await html2pdf().from(reportContainer).set(opt).save();
+}
 

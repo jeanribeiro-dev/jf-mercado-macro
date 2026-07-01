@@ -12,6 +12,8 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- ApexCharts -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
     <style>
@@ -145,6 +147,10 @@
                     <button class="action-btn primary-btn" id="open-modal-btn">
                         <i data-lucide="plus-circle"></i>
                         <span>Registrar Operação</span>
+                    </button>
+                    <button class="action-btn secondary-btn" id="open-pdf-modal-btn">
+                        <i data-lucide="download"></i>
+                        <span>Relatório PDF</span>
                     </button>
                     <button class="action-btn secondary-btn" id="sync-btn">
                         <i data-lucide="refresh-cw"></i>
@@ -384,8 +390,36 @@
         </div>
     </div>
 
+    <!-- Modal de Exportação PDF -->
+    <div class="modal-overlay" id="pdf-modal">
+        <div class="modal-container" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3><i data-lucide="download"></i> Exportar Relatório Mensal</h3>
+                <button class="close-btn" id="close-pdf-modal-btn">&times;</button>
+            </div>
+            <form id="pdf-form">
+                <div class="form-grid" style="grid-template-columns: 1fr;">
+                    <div class="form-group">
+                        <label for="pdf-month-select">Escolha o Mês</label>
+                        <select id="pdf-month-select" required>
+                            <!-- Preenchido dinamicamente via JS -->
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-top: 15px; font-size: 11px; color: var(--text-secondary); line-height: 1.4; display: flex; align-items: center; gap: 6px;">
+                    <i data-lucide="info" style="width: 14px; height: 14px; flex-shrink: 0; color: #f59e0b;"></i>
+                    <span>As operações do DI serão excluídas automaticamente deste relatório.</span>
+                </div>
+                <div class="form-actions" style="margin-top: 20px;">
+                    <button type="button" class="cancel-btn" id="cancel-pdf-btn">Cancelar</button>
+                    <button type="submit" class="save-btn" style="background: var(--color-primary); color: #0a0e17;">Gerar PDF</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Custom Logic -->
-    <script src="app.js?v=1.0.12"></script>
+    <script src="app.js?v=1.0.13"></script>
     <script>
         // Inicializar ícones do Lucide
         lucide.createIcons();
