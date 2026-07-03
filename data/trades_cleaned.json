@@ -3132,5 +3132,80 @@
     "strategy": "HEDGE ÍNDICE",
     "direction": "COMPRA",
     "pnl": -2500
+  },
+  {
+    "date": "2026-06-26",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": -1800,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-26",
+    "strategy": "ABERTURA INDICE",
+    "direction": "VENDA",
+    "pnl": -2200,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-26",
+    "strategy": "DI ABERTURA",
+    "direction": "COMPRA",
+    "pnl": -2200,
+    "stop": "OK",
+    "zero_zero": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-26",
+    "strategy": "HEDGE DÓLAR",
+    "direction": "COMPRA",
+    "pnl": 2205,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-26",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "COMPRA",
+    "pnl": -2500
+  },
+  {
+    "date": "2026-06-29",
+    "strategy": "ABERTURA DOLAR",
+    "direction": "COMPRA",
+    "pnl": 0,
+    "stop": "NÃO",
+    "zero_zero": "OK",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-29",
+    "strategy": "ABERTURA INDICE",
+    "direction": "COMPRA",
+    "pnl": -2200,
+    "stop": "OK",
+    "p1": "NÃO",
+    "p2": "NÃO",
+    "alvo": "NÃO"
+  },
+  {
+    "date": "2026-06-29",
+    "strategy": "HEDGE DÓLAR",
+    "direction": "COMPRA",
+    "pnl": 2205,
+    "stop": "NÃO",
+    "alvo": "OK"
+  },
+  {
+    "date": "2026-06-29",
+    "strategy": "HEDGE ÍNDICE",
+    "direction": "VENDA",
+    "pnl": 0
   }
 ]
