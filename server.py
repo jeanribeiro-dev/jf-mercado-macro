@@ -29,7 +29,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 new_trade = json.loads(post_data.decode('utf-8'))
                 
                 # Check target file path
-                json_path = os.path.join(DIRECTORY, 'trades_cleaned.json')
+                json_path = os.path.join(DIRECTORY, 'data', 'trades_cleaned.json')
                 
                 trades = []
                 if os.path.exists(json_path):
@@ -58,7 +58,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 req_data = json.loads(post_data.decode('utf-8'))
                 index_to_delete = req_data.get('index')
                 
-                json_path = os.path.join(DIRECTORY, 'trades_cleaned.json')
+                json_path = os.path.join(DIRECTORY, 'data', 'trades_cleaned.json')
                 
                 if index_to_delete is not None and os.path.exists(json_path):
                     with open(json_path, 'r', encoding='utf-8') as f:
