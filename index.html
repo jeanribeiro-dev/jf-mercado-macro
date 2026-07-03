@@ -1,11 +1,428 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=dashboard/index.html">
-    <title>Redirecionando para o Dashboard...</title>
-  </head>
-  <body>
-    <p>Se você não for redirecionado automaticamente, <a href="dashboard/index.html">clique aqui para acessar o Dashboard</a>.</p>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JF Mercado Macro | Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for Risk Profile and ROI */
+        .profile-toggle {
+            display: flex;
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .profile-btn {
+            background: transparent;
+            border: none;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .profile-btn.conservador.active { background-color: rgba(16, 185, 129, 0.15); color: #10b981; }
+        .profile-btn.moderado.active { background-color: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .profile-btn.arrojado.active { background-color: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        .profile-btn:not(.active):hover { background-color: rgba(255, 255, 255, 0.05); }
+
+        .roi-badge {
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+        .roi-badge.positive { background-color: rgba(16, 185, 129, 0.15); color: #10b981; }
+        .roi-badge.negative { background-color: rgba(239, 68, 68, 0.15); color: #ef4444; }
+    </style>
+</head>
+<body>
+    <!-- TradingView Ticker Tape Widget (Opção 1) -->
+    <div class="tradingview-widget-container" id="tv-ticker-tape" style="height: 44px; overflow: hidden; background: #131722;">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        {
+          "description": "Ibovespa",
+          "proName": "BMFBOVESPA:IBOV"
+        },
+        {
+          "description": "Mini Dólar",
+          "proName": "BMFBOVESPA:WDO1!"
+        },
+        {
+          "description": "Mini Índice",
+          "proName": "BMFBOVESPA:WIN1!"
+        },
+        {
+          "description": "S&P 500",
+          "proName": "OANDA:SPX500USD"
+        },
+        {
+          "description": "Bitcoin",
+          "proName": "BINANCE:BTCUSDT"
+        }
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "colorTheme": "dark",
+      "locale": "br"
+    }
+      </script>
+    </div>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i data-lucide="trending-up" class="logo-icon"></i>
+                <div class="logo-text">
+                    <h1>JF MERCADO MACRO</h1>
+                    <span>Trading Analytics</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-btn active" id="btn-all" data-tab="consolidated">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Todas Juntas</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="ABERTURA INDICE">
+                    <i data-lucide="bar-chart-2"></i>
+                    <span>Abertura Índice</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="ABERTURA DOLAR">
+                    <i data-lucide="dollar-sign"></i>
+                    <span>Abertura Dólar</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="HEDGE DÓLAR">
+                    <i data-lucide="shield"></i>
+                    <span>Hedge Dólar</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="DI ABERTURA">
+                    <i data-lucide="activity"></i>
+                    <span>DI Abertura</span>
+                </button>
+                <button class="nav-btn active strat-btn" data-strategy="HEDGE ÍNDICE">
+                    <i data-lucide="bar-chart-2"></i>
+                    <span>Hedge Índice</span>
+                </button>
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="dot online"></span>
+                    <span id="status-text">Servidor Ativo</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-title">
+                    <h2 id="current-tab-title">Consolidado das Estratégias</h2>
+                    <p id="current-tab-desc">Visão agregada e curva de capital de todo o portfólio.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn primary-btn" id="open-modal-btn">
+                        <i data-lucide="plus-circle"></i>
+                        <span>Registrar Operação</span>
+                    </button>
+                    <button class="action-btn secondary-btn" id="open-pdf-modal-btn">
+                        <i data-lucide="download"></i>
+                        <span>Relatório PDF</span>
+                    </button>
+                    <button class="action-btn secondary-btn" id="sync-btn">
+                        <i data-lucide="refresh-cw"></i>
+                        <span>Sincronizar GitHub</span>
+                    </button>
+                    <div class="filter-group">
+                        <label><i data-lucide="shield"></i> Perfil de Risco</label>
+                        <div class="profile-toggle">
+                            <button class="profile-btn conservador" data-profile="conservador">Conservador</button>
+                            <button class="profile-btn moderado" data-profile="moderado">Moderado</button>
+                            <button class="profile-btn arrojado active" data-profile="arrojado">Arrojado</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="period-filter"><i data-lucide="calendar"></i> Período</label>
+                        <select id="period-filter">
+                            <option value="all">Todo o Histórico</option>
+                            <option value="7days">Últimos 7 dias</option>
+                            <option value="30days">Últimos 30 dias</option>
+                            <option value="custom">Personalizado</option>
+                        </select>
+                        <div id="custom-date-inputs" style="display: none; align-items: center; gap: 8px; margin-left: 12px; border-left: 1px solid var(--border-color); padding-left: 12px;">
+                            <input type="date" id="date-start">
+                            <span style="font-size: 12px; color: var(--text-secondary);">até</span>
+                            <input type="date" id="date-end">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Cards de Métricas -->
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Resultado Total <span id="metric-roi" class="roi-badge">+0.00%</span></h3>
+                        <p id="metric-pnl" class="metric-value">R$ 0,00</p>
+                        <small style="color: var(--text-secondary); font-size: 12px;">Capital Base: R$ 50.000,00</small>
+                    </div>
+                    <div class="metric-icon positive-bg">
+                        <i data-lucide="wallet"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Drawdown Máx.</h3>
+                        <span class="metric-value negative" id="metric-dd">R$ 0,00</span>
+                    </div>
+                    <div class="metric-icon negative-bg">
+                        <i data-lucide="trending-down"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card" title="Máximo capital negativo alcançado em relação ao início do período selecionado.">
+                    <div class="metric-info">
+                        <h3>Rebaixamento Máx.</h3>
+                        <span class="metric-value negative" id="metric-initial-dd">R$ 0,00</span>
+                    </div>
+                    <div class="metric-icon negative-bg">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Taxa de Acerto</h3>
+                        <span class="metric-value" id="metric-wr">0.0%</span>
+                    </div>
+                    <div class="metric-icon warning-bg">
+                        <i data-lucide="target"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Total Operações</h3>
+                        <span class="metric-value" id="metric-trades">0</span>
+                    </div>
+                    <div class="metric-icon info-bg">
+                        <i data-lucide="sliders"></i>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <h3>Sequências</h3>
+                        <div style="display: flex; gap: 12px; margin-top: 4px;">
+                            <span class="metric-value positive" style="font-size: 1.1rem; display: flex; align-items: center; gap: 4px;"><i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i> <span id="metric-win-streak">0</span></span>
+                            <span class="metric-value negative" style="font-size: 1.1rem; display: flex; align-items: center; gap: 4px;"><i data-lucide="arrow-down" style="width: 14px; height: 14px;"></i> <span id="metric-loss-streak">0</span></span>
+                        </div>
+                    </div>
+                    <div class="metric-icon info-bg">
+                        <i data-lucide="activity"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráficos -->
+            <section class="charts-area">
+                <div class="chart-card large">
+                    <div class="chart-header">
+                        <h3>Curva de Capital Acumulada (Equity Curve)</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="legend-dot portfolio"></span>Portfólio</span>
+                        </div>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="equity-chart"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Perfil de Rebaixamento (Drawdown)</h3>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="drawdown-chart"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tabela de Trades -->
+            <section class="table-card">
+                <div class="table-header">
+                    <h3>Histórico de Operações</h3>
+                    <div class="table-actions">
+                        <div class="search-box">
+                            <i data-lucide="search"></i>
+                            <input type="text" id="table-search" placeholder="Buscar operações...">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="trades-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Estratégia</th>
+                                <th>Direção</th>
+                                <th>Stop</th>
+                                <th>Parcial 1 / 0x0</th>
+                                <th>Parcial 2</th>
+                                <th>Alvo Final</th>
+                                <th>Resultado (Pts/R$)</th>
+                                <th id="actions-header">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trades-table-body">
+                            <!-- Inserido dinamicamente via JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <span id="table-showing-text">Mostrando 0 de 0 operações</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Modal de Inserção de Trade -->
+    <div class="modal-overlay" id="trade-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3><i data-lucide="plus-circle"></i> Registrar Nova Operação</h3>
+                <button class="close-btn" id="close-modal-btn">&times;</button>
+            </div>
+            <form id="trade-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="trade-date">Data</label>
+                        <input type="date" id="trade-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-strategy">Estratégia</label>
+                        <select id="trade-strategy" required>
+                            <option value="ABERTURA INDICE">Abertura Índice</option>
+                            <option value="ABERTURA DOLAR">Abertura Dólar</option>
+                            <option value="HEDGE DÓLAR">Hedge Dólar</option>
+                            <option value="DI ABERTURA">DI Abertura</option>
+                            <option value="HEDGE ÍNDICE">Hedge Índice</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-direction">Direção</label>
+                        <select id="trade-direction" required>
+                            <option value="COMPRA">Compra</option>
+                            <option value="VENDA">Venda</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-stop">Stop</label>
+                        <select id="trade-stop" required>
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                            <option value="INABILITADO">INABILITADO</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-p1">
+                        <label for="trade-p1" id="label-p1">Parcial 1 / 0x0</label>
+                        <select id="trade-p1">
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-p2">
+                        <label for="trade-p2">Parcial 2</label>
+                        <select id="trade-p2">
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-alvo">
+                        <label for="trade-alvo">Alvo Final</label>
+                        <select id="trade-alvo">
+                            <option value="NÃO">NÃO</option>
+                            <option value="OK">OK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trade-pnl">Resultado Financeiro / Pontos</label>
+                        <input type="number" step="0.01" id="trade-pnl" placeholder="Ex: 910 ou -2520" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn" id="cancel-form-btn">Cancelar</button>
+                    <button type="submit" class="save-btn">Salvar Operação</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Exportação PDF -->
+    <div class="modal-overlay" id="pdf-modal">
+        <div class="modal-container" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3><i data-lucide="download"></i> Exportar Relatório Mensal</h3>
+                <button class="close-btn" id="close-pdf-modal-btn">&times;</button>
+            </div>
+            <form id="pdf-form">
+                <div class="form-grid" style="grid-template-columns: 1fr;">
+                    <div class="form-group">
+                        <label for="pdf-month-select">Escolha o Mês</label>
+                        <select id="pdf-month-select" required>
+                            <!-- Preenchido dinamicamente via JS -->
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-top: 15px; font-size: 11px; color: var(--text-secondary); line-height: 1.4; display: flex; align-items: center; gap: 6px;">
+                    <i data-lucide="info" style="width: 14px; height: 14px; flex-shrink: 0; color: #f59e0b;"></i>
+                    <span>As operações do DI serão excluídas automaticamente deste relatório.</span>
+                </div>
+                <div class="form-actions" style="margin-top: 20px;">
+                    <button type="button" class="cancel-btn" id="cancel-pdf-btn">Cancelar</button>
+                    <button type="submit" class="save-btn" style="background: var(--color-primary); color: #0a0e17;">Gerar PDF</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Logic -->
+    <script src="app.js?v=1.0.13"></script>
+    <script>
+        // Inicializar ícones do Lucide
+        lucide.createIcons();
+    </script>
+</body>
 </html>
