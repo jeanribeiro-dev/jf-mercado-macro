@@ -701,7 +701,7 @@ tradeForm.addEventListener('submit', async (e) => {
             closeModal();
             
             // Recarregar os dados do painel recém-salvos
-            const getResponse = await fetch(`trades_cleaned.json?t=${Date.now()}`);
+            const getResponse = await fetch(`../data/trades_cleaned.json?t=${Date.now()}`);
             rawTrades = await getResponse.json();
             rawTrades.forEach((t, i) => t._originalIndex = i);
             updateDashboard();

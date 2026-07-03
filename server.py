@@ -96,7 +96,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 # Push always to ensure remote is up to date
                 subprocess.run(["git", "push"], cwd=DIRECTORY, check=True, shell=True, env=env)
                 
-                response_data = {"status": "success", "message": "Dashboard sincronizado com o Netlify com sucesso!"}
+                response_data = {"status": "success", "message": "Dashboard sincronizado com o GitHub com sucesso!"}
             except Exception as e:
                 print(f"Erro na sincronização: {str(e)}")
                 response_data = {"status": "error", "message": f"Erro na sincronização: {str(e)}"}
