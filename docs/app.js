@@ -69,7 +69,7 @@ profileBtns.forEach(btn => {
 
 async function init() {
     try {
-        const response = await fetch(`trades_cleaned.json?t=${Date.now()}`);
+        const response = await fetch(`../data/trades_cleaned.json?t=${Date.now()}`);
         if (!response.ok) {
             alert("Erro ao carregar dados: " + response.status + " " + response.statusText);
         }
@@ -701,7 +701,7 @@ tradeForm.addEventListener('submit', async (e) => {
             closeModal();
             
             // Recarregar os dados do painel recém-salvos
-            const getResponse = await fetch(`trades_cleaned.json?t=${Date.now()}`);
+            const getResponse = await fetch(`../data/trades_cleaned.json?t=${Date.now()}`);
             rawTrades = await getResponse.json();
             rawTrades.forEach((t, i) => t._originalIndex = i);
             updateDashboard();
@@ -749,7 +749,7 @@ window.deleteTrade = async function(index) {
         if (result.status === 'success') {
             alert(result.message);
             // Recarregar os dados
-            const getResponse = await fetch(`trades_cleaned.json?t=${Date.now()}`);
+            const getResponse = await fetch(`../data/trades_cleaned.json?t=${Date.now()}`);
             rawTrades = await getResponse.json();
             rawTrades.forEach((t, i) => t._originalIndex = i);
             updateDashboard();

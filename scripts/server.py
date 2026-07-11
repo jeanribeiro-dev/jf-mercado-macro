@@ -6,11 +6,14 @@ import subprocess
 
 PORT = 8000
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(DIRECTORY)
+DOCS_DIR = os.path.join(PROJECT_ROOT, 'docs')
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         # Serve from current directory
-        super().__init__(*args, directory=DIRECTORY, **kwargs)
+        super().__init__(*args, directory=DOCS_DIR, **kwargs)
 
     def do_POST(self):
         # Set CORS headers
@@ -29,7 +32,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 new_trade = json.loads(post_data.decode('utf-8'))
                 
                 # Check target file path
-                json_path = os.path.join(DIRECTORY, 'trades_cleaned.json')
+                json_path = os.path.join(DATA_DIR, 'trades_cleaned.json')
                 
                 trades = []
                 if os.path.exists(json_path):
@@ -58,7 +61,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 req_data = json.loads(post_data.decode('utf-8'))
                 index_to_delete = req_data.get('index')
                 
-                json_path = os.path.join(DIRECTORY, 'trades_cleaned.json')
+                json_path = os.path.join(DATA_DIR, 'trades_cleaned.json')
                 
                 if index_to_delete is not None and os.path.exists(json_path):
                     with open(json_path, 'r', encoding='utf-8') as f:
@@ -87,14 +90,14 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 env["GCM_INTERACTIVE"] = "never"
                 
                 # Check if there are changes to commit
-                status_res = subprocess.run(["git", "status", "--porcelain"], cwd=DIRECTORY, capture_output=True, text=True, shell=True, env=env)
+                status_res = subprocess.run(["git", "status", "--porcelain"], cwd=PROJECT_ROOT, capture_output=True, text=True, shell=True, env=env)
                 if status_res.stdout.strip():
                     # Execute Git commit only if changes exist
-                    subprocess.run(["git", "add", "."], cwd=DIRECTORY, check=True, shell=True, env=env)
-                    subprocess.run(["git", "commit", "-m", "Update trades via local dashboard"], cwd=DIRECTORY, check=True, shell=True, env=env)
+                    subprocess.run(["git", "add", "."], cwd=PROJECT_ROOT, check=True, shell=True, env=env)
+                    subprocess.run(["git", "commit", "-m", "Update trades via local dashboard"], cwd=PROJECT_ROOT, check=True, shell=True, env=env)
                 
                 # Push always to ensure remote is up to date
-                subprocess.run(["git", "push"], cwd=DIRECTORY, check=True, shell=True, env=env)
+                subprocess.run(["git", "push"], cwd=PROJECT_ROOT, check=True, shell=True, env=env)
                 
                 response_data = {"status": "success", "message": "Dashboard sincronizado com o GitHub com sucesso!"}
             except Exception as e:

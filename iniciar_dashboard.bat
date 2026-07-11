@@ -10,4 +10,4 @@ start "" "http://localhost:8000/"
 echo.
 echo Para encerrar o servidor, basta fechar esta janela.
 echo.
-python server.py
+python scripts/server.py
