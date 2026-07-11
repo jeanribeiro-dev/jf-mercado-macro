@@ -8,7 +8,7 @@ PORT = 8000
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(DIRECTORY)
 DOCS_DIR = os.path.join(PROJECT_ROOT, 'docs')
-DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
+DATA_DIR = os.path.join(DOCS_DIR, 'data')
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
