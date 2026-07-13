@@ -2,9 +2,9 @@
 
 Dashboard analítico interativo para acompanhamento de métricas, drawdown e curvas de capital (Equity Curve) de estratégias quantitativas e discricionárias aplicadas ao mercado financeiro (B3 e Forex).
 
-🔗 **[Acesse o Dashboard Online](https://jeanribeiro-dev.github.io/jf-mercado-macro/dashboard/)**
+🔗 **[Acesse o Dashboard Online](https://jeanribeiro-dev.github.io/jf-mercado-macro/)**
 
-👉 [Clique aqui para acessar o painel interativo](https://jeanribeiro-dev.github.io/jf-mercado-macro/dashboard/)
+👉 [Clique aqui para acessar o painel interativo](https://jeanribeiro-dev.github.io/jf-mercado-macro/)
 
 👉 [Clique aqui para ver a Apresentação Executiva](https://jeanribeiro-dev.github.io/jf-mercado-macro/apresentacao/)
 
